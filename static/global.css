@@ -1,0 +1,29 @@
+html,
+body {
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+h1 {
+	font-family: 'Playfair Display';
+	font-size: 3rem;
+	font-weight: 800;
+}
+
+p {
+	font-family: 'Josefin Sans';
+	font-weight: 300;
+	width: clamp(300px, 50vw, 700px);
+	text-align: center;
+	margin: 7vh auto;
+
+}
+
+h1, p {
+	color: #fff;
+}
