@@ -1,7 +1,32 @@
 <script>
 
+	import { onMount } from 'svelte'
+
+	import { currentTime } from '../stores/voice'
+
 	export let prev
 	export let next
+
+	let voice
+	let playing
+
+	onMount(() => {
+		voice = new Audio('/voice.mp3')
+		voice.addEventListener('timeupdate', e => {
+			currentTime.set(Math.round(voice.currentTime))
+		})
+	})
+
+	const toggleVoice = () => {
+		if (!voice.paused) {
+			voice.pause()
+		}
+		else {
+			voice.play()
+		}
+
+		playing = !voice.paused
+	}
 
 </script>
 
@@ -12,6 +37,7 @@
 		display: flex;
 		align-self: center;
 		justify-content: space-between;
+		position: relative;
 	}
 
 	nav a {
@@ -44,6 +70,13 @@
 		opacity: .5;
 	}
 
+	nav .btn {
+		position: absolute;
+		margin: auto;
+		right: 0;
+		left: 0;
+		/* display: none; */
+	}
 
 </style>
 
@@ -51,6 +84,10 @@
 	<a href="{prev}" class="disabled">
 		Précédent
 	</a>
+
+	<button class="btn" on:click="{toggleVoice}">
+		<i class="fas fa-volume-{playing ? 'up' : 'mute'}"></i>
+	</button>
 
 	<a href="{next}">
 		Suivant

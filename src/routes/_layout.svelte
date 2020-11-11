@@ -3,6 +3,7 @@
 	import Nav from '../components/Nav.svelte'
 	import { afterUpdate } from 'svelte'
 
+
 	// import { spring } from 'svelte/motion';
 
 	// let coords = spring({ x: 50, y: 50 }, {
