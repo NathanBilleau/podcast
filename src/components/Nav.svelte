@@ -66,6 +66,11 @@
 		width: 70px;
 	}
 
+	nav a.disabled:hover:first-of-type::before,
+	nav a.disabled:hover:last-of-type::after {
+		width: 50px;
+	}
+
 	nav a.disabled {
 		opacity: .5;
 	}
@@ -81,7 +86,7 @@
 </style>
 
 <nav>
-	<a href="{prev}" class="disabled">
+	<a href="{prev}" class="{prev ? '' : 'disabled'}">
 		Précédent
 	</a>
 
@@ -89,7 +94,7 @@
 		<i class="fas fa-volume-{playing ? 'up' : 'mute'}"></i>
 	</button>
 
-	<a href="{next}">
+	<a href="{next}" class="{next ? '' : 'disabled'}">
 		Suivant
 	</a>
 </nav>
