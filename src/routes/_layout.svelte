@@ -1,6 +1,16 @@
 <script>
+	import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 	import Nav from '../components/Nav.svelte'
 	import { afterUpdate } from 'svelte'
+
+	// import { spring } from 'svelte/motion';
+
+	// let coords = spring({ x: 50, y: 50 }, {
+	// 	stiffness: 0.1,
+	// 	damping: 0.5
+	// });
+
+	// let size = spring(7);
 
 	let prev = '/'
 	let next = '/'
@@ -27,6 +37,7 @@
 		background-color: #555;
 	}
 
+
 	.container {
 		padding: 0 clamp(100px, 10vw, 200px);
 		display: grid;
@@ -36,10 +47,31 @@
 
 	.content {
 		position:relative;
+		overflow-y: auto;
 	}
+	
+	/* svg {
+		width: 100%;
+		height: 100%;
+		margin: -8px;
+		position: absolute;
+	}
+	
+	circle {
+		fill: #fff
+	} */
+	
 </style>
 
 <main>
+	<!-- <svg
+		on:mousemove="{e => coords.set({ x: e.clientX, y: e.clientY })}"
+		on:mousedown="{() => size.set(20)}"
+		on:mouseup="{() => size.set(7)}"
+	>
+		<circle cx={$coords.x} cy={$coords.y} r={$size}/>
+	</svg> -->
+
 	<div class="container">
 		<div></div>
 		<div class="content">
