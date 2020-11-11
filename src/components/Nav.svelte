@@ -1,5 +1,8 @@
 <script>
 
+	export let prev
+	export let next
+
 </script>
 
 <style>
@@ -45,11 +48,11 @@
 </style>
 
 <nav>
-	<a href="/" class="disabled">
+	<a href="{prev}" class="disabled">
 		Précédent
 	</a>
 
-	<a href="/">
+	<a href="{next}">
 		Suivant
 	</a>
 </nav>
