@@ -1,8 +1,10 @@
 <script>
 	import Nav from '../components/Nav.svelte'
 	import { afterUpdate } from 'svelte'
-	import { onMount } from 'svelte'
 	import { currentTime } from '../stores/voice'
+
+	import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
+
 
 	// import { spring } from 'svelte/motion';
 
@@ -16,7 +18,7 @@
 	let prev = '/'
 	let next = '/'
 
-	let routes = ['/', '/histoire', '/blabla']
+	let routes = ['/', '/histoire']
 
 	afterUpdate(() => {
 		let currentRoute = window.location.pathname
@@ -24,15 +26,13 @@
 
 		prev = routes[i - 1]
 		next = routes[i + 1]
-	})
 
-	onMount(() => {
 		const timingEls = document.querySelectorAll('[data-time]')
 
 		for (const el of timingEls) {
 			el.style.opacity = 0
 			el.style.transform = `translateY(10px)`
-			el.style.transition = '.5s'
+			el.style.transition = '.8s cubic-bezier(.5, 0, .5, 1)'
 		}
 
 		currentTime.subscribe(ct => {
@@ -43,7 +43,7 @@
 				}
 			}
 		})
-		
+
 	})
 
 </script>
@@ -55,7 +55,7 @@
 		background-position: center;
 		background-blend-mode: multiply;
 		height: 100vh;
-		background-color: #555;
+		background-color: #333;
 	}
 
 

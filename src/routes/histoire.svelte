@@ -1,5 +1,18 @@
 <script>
 
+	import { currentTime, voicePlaying } from '../stores/voice'
+	import { onMount } from 'svelte'
+
+	let end = 8.3
+
+	onMount(() => {
+		currentTime.subscribe(value => {
+			if (value >= end) {
+				$voicePlaying = false
+			}
+		})
+	})
+
 </script>
 
 <style>
@@ -12,8 +25,8 @@
 
 <h1>L'histoire du podcast</h1>
 
-<p data-time={2}>
-	Le principe du podcast existe depuis le début des années 2000.
+<p data-time={2.5}>
+	Le principe du <b>podcast</b> existe depuis le début des années 2000.
 </p>
 
 <div class="icons">
@@ -22,12 +35,12 @@
 		<p>microphone</p>
 	</div>
 
-	<div class="icon" data-time={4.4}>
+	<div class="icon" data-time={4.5}>
 		<i class="fas fa-rss"></i>
 		<p>rss</p>
 	</div>
 
-	<div class="icon" data-time={4.8}>
+	<div class="icon" data-time={5}>
 		<i class="fas fa-laptop"></i>
 		<p>ordinateur</p>
 	</div>

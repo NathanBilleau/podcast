@@ -2,30 +2,42 @@
 
 	import { onMount } from 'svelte'
 
-	import { currentTime } from '../stores/voice'
+	import { currentTime, voicePlaying } from '../stores/voice'
 
-	export let prev
-	export let next
+	export let prev, next
 
 	let voice
-	let playing
 
 	onMount(() => {
 		voice = new Audio('/voice.mp3')
 		voice.addEventListener('timeupdate', e => {
 			currentTime.set(voice.currentTime)
 		})
+
+		voicePlaying.subscribe(value => {
+			if (!value) {
+				pause()
+			}
+		})
 	})
 
 	const toggleVoice = () => {
-		if (!voice.paused) {
-			voice.pause()
+		if ($voicePlaying) {
+			pause()
 		}
 		else {
-			voice.play()
+			play()
 		}
+	}
 
-		playing = !voice.paused
+	const play = () => {
+		voice.play()
+		$voicePlaying = true
+	}
+
+	const pause = () => {
+		voice.pause()
+		$voicePlaying = false
 	}
 
 </script>
@@ -42,11 +54,11 @@
 
 	nav a {
 		color: #fff;
-		font-family: 'Josefin Sans';
+		font-family: 'Karla';
 		text-transform: uppercase;
 		text-decoration: none;
 		font-size: .85em;
-		font-weight: 400;
+		font-weight: 700;
 	}
 
 	nav a:first-of-type::before,
@@ -91,7 +103,7 @@
 	</a>
 
 	<button class="btn" on:click="{toggleVoice}">
-		<i class="fas fa-volume-{playing ? 'up' : 'mute'}"></i>
+		<i class="fas fa-volume-{$voicePlaying ? 'mute' : 'up'}"></i>
 	</button>
 
 	<a href="{next}" class="{next ? '' : 'disabled'}">
