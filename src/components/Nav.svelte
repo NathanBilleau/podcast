@@ -13,7 +13,7 @@
 	onMount(() => {
 		voice = new Audio('/voice.mp3')
 		voice.addEventListener('timeupdate', e => {
-			currentTime.set(Math.round(voice.currentTime))
+			currentTime.set(voice.currentTime)
 		})
 	})
 

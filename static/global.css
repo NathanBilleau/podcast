@@ -108,9 +108,14 @@ h1, p {
 
 .icon:hover p {
 	opacity: 1;
-	top: 40px;
+	top: 35px;
 }
 
 .icon:hover i::after {
 	background-color: rgba(255, 255, 255, .1);
+}
+
+.content .display {
+	transform: translateY(0)!important;
+	opacity: 1!important;
 }

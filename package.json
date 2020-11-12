@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "Podcast",
+  "description": "Economics of podcasts...",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
@@ -9,7 +9,6 @@
     "start": "node __sapper__/build"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.1",
     "compression": "^1.7.1",
     "polka": "next",
     "sirv": "^1.0.0"

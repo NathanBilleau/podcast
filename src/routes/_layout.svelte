@@ -1,5 +1,4 @@
 <script>
-	import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 	import Nav from '../components/Nav.svelte'
 	import { afterUpdate } from 'svelte'
 
