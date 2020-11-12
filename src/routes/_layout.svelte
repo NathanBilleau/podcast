@@ -1,7 +1,8 @@
 <script>
 	import Nav from '../components/Nav.svelte'
 	import { afterUpdate } from 'svelte'
-
+	import { onMount } from 'svelte'
+	import { currentTime } from '../stores/voice'
 
 	// import { spring } from 'svelte/motion';
 
@@ -23,6 +24,26 @@
 
 		prev = routes[i - 1]
 		next = routes[i + 1]
+	})
+
+	onMount(() => {
+		const timingEls = document.querySelectorAll('[data-time]')
+
+		for (const el of timingEls) {
+			el.style.opacity = 0
+			el.style.transform = `translateY(10px)`
+			el.style.transition = '.5s'
+		}
+
+		currentTime.subscribe(ct => {
+			for (const el of timingEls) {
+				const attrTime = el.getAttribute('data-time')
+				if (ct >= attrTime) {
+					el.classList.add('display')
+				}
+			}
+		})
+		
 	})
 
 </script>
