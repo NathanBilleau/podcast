@@ -1,16 +1,16 @@
 <script>
 
-	import { currentTime, voicePlaying } from '../stores/voice'
+	import { currentTime, voicePlaying, end } from '../stores/voice'
 	import { onMount } from 'svelte'
 
-	let end = 8.3
+	$end = 7
 
 	onMount(() => {
-		currentTime.subscribe(value => {
-			if (value >= end) {
-				$voicePlaying = false
-			}
-		})
+		// currentTime.subscribe(value => {
+		// 	if (value >= end) {
+		// 		$voicePlaying = false
+		// 	}
+		// })
 	})
 
 </script>

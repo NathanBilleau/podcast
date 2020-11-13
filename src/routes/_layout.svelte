@@ -18,7 +18,7 @@
 	let prev = '/'
 	let next = '/'
 
-	let routes = ['/', '/histoire']
+	let routes = ['/', '/histoire', '/blabla']
 
 	afterUpdate(() => {
 		let currentRoute = window.location.pathname
@@ -60,9 +60,9 @@
 
 
 	.container {
-		padding: 0 clamp(100px, 10vw, 200px);
+		padding: 0 clamp(80px, 8vw, 200px);
 		display: grid;
-		grid-template-rows: clamp(100px, 10vw, 200px) auto clamp(100px, 10vw, 200px);
+		grid-template-rows: clamp(80px, 8vw, 200px) auto clamp(100px, 10vw, 200px);
 		height: 100%;
 	}
 

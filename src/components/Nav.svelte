@@ -2,7 +2,7 @@
 
 	import { onMount } from 'svelte'
 
-	import { currentTime, voicePlaying } from '../stores/voice'
+	import { currentTime, voicePlaying, end } from '../stores/voice'
 
 	export let prev, next
 
@@ -14,8 +14,8 @@
 			currentTime.set(voice.currentTime)
 		})
 
-		voicePlaying.subscribe(value => {
-			if (!value) {
+		currentTime.subscribe(value => {
+			if (value >= $end) {
 				pause()
 			}
 		})
@@ -83,7 +83,8 @@
 		width: 50px;
 	}
 
-	nav a.disabled {
+	nav a.disabled,
+	nav .btn[disabled] {
 		opacity: .5;
 	}
 
@@ -92,6 +93,7 @@
 		margin: auto;
 		right: 0;
 		left: 0;
+		transition: .2s cubic-bezier(.83,0,.31,.94);
 		/* display: none; */
 	}
 
@@ -102,11 +104,11 @@
 		Précédent
 	</a>
 
-	<button class="btn" on:click="{toggleVoice}">
+	<button class="btn" on:click="{toggleVoice}" disabled="{!$end}">
 		<i class="fas fa-volume-{$voicePlaying ? 'mute' : 'up'}"></i>
 	</button>
 
-	<a href="{next}" class="{next ? '' : 'disabled'}">
+	<a href="{next}" class="{next && ($currentTime >= $end) ? '' : 'disabled'}" disabled="{!($currentTime >= $end)}">
 		Suivant
 	</a>
 </nav>

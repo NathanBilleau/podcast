@@ -1,4 +1,8 @@
 <script>
+
+	import { currentTime, voicePlaying, end } from '../stores/voice'
+
+	$end = undefined
 	
 </script>
 
