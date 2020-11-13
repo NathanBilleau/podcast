@@ -7,10 +7,11 @@
 
 <style>
 	h1 {
-		align-self: flex-end;
+		/* align-self: flex-end; */
 		max-width: clamp(300px, 50vw, 800px);
 		bottom: 0;
 		position: absolute;
+		left: 0;
 	}
 </style>
 

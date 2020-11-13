@@ -1,0 +1,43 @@
+<script>
+
+    import { end } from '../stores/voice'
+    $end = 16
+
+</script>
+
+<style>
+
+</style>
+
+
+<h1>La création</h1>
+<p data-time={9}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea non odio aspernatur ut alias voluptatum itaque? Illo quas dicta quidem placeat, unde iure! Eligendi dolore aspernatur accusantium cupiditate optio et?</p>
+
+<div class="icons">
+
+    <div class="icon" data-time={12}>
+        <i class="fa fa-lightbulb"></i>
+        <p>une idée</p>
+    </div>
+
+    <div class="icon" data-time={13}>
+        <i class="fa fa-microphone"></i>
+        <p>enregistrer</p>
+    </div>
+
+    <div class="icon" data-time={14}>
+        <i class="fa fa-stream"></i>
+        <p>Montage</p>
+    </div>
+
+    <div class="icon" data-time={15}>
+        <i class="fa fa-cloud-upload-alt"></i>
+        <p>Mise en ligne</p>
+    </div>
+
+    <div class="icon" data-time={16}>
+        <i class="fa fa-podcast"></i>
+        <p>Diffusion</p>
+    </div>
+
+</div>

@@ -1,25 +1,27 @@
 <script>
 	import Nav from '../components/Nav.svelte'
+	import Progress from '../components/Progress.svelte'
 	import { afterUpdate } from 'svelte'
-	import { currentTime } from '../stores/voice'
+	import { currentTime, end } from '../stores/voice'
 
 	import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 
 	let prev = '/'
 	let next = '/'
 
-	let routes = ['/', '/histoire', '/blabla']
+	let routes = ['/', '/histoire', '/creation', '/distribution']
+	let i
 
 	afterUpdate(() => {
 		let currentRoute = window.location.pathname
-		let i = routes.indexOf(currentRoute)
+		i = routes.indexOf(currentRoute)
 
 		prev = routes[i - 1]
 		next = routes[i + 1]
 
 		const timingEls = document.querySelectorAll('[data-time]')
 
-		if (false) {
+		if (true) {
 			for (const el of timingEls) {
 				el.style.opacity = 0
 				el.style.transform = `translateY(10px)`
@@ -55,20 +57,23 @@
 	.container {
 		padding: 0 clamp(100px, 9vw, 200px);
 		display: grid;
-		grid-template-rows: clamp(50px, 9vw, 200px) auto clamp(50px, 9vw, 200px);
+		grid-template-rows: clamp(50px, 7vh, 200px) auto clamp(120px, 12vh, 200px);
 		height: 100%;
 	}
 
 	.content {
 		position:relative;
 		overflow-y: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 	
 </style>
 
 <main>
 	<div class="container">
-		<div></div>
+		<Progress totalRoutes={routes.length} i={i} />
 		<div class="content">
 			<slot></slot>
 		</div>

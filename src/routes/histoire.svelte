@@ -1,6 +1,9 @@
 <script>
 
 	import { end } from '../stores/voice'
+
+	import arte from '../images/arte.png'
+
 	$end = 7
 	
 </script>
@@ -35,38 +38,9 @@
 		<p>Smartphone</p>
 	</div>
 </div>
+<!-- 
+<figure>
+	<img src={arte} alt="arte-radio">
+    <figcaption>arte-radio.com</figcaption>
+</figure> -->
 
-<p data-time={3.8}>
-	La plupart des utilisateurs écoutent ces podcasts sur différentes plateformes. Les plus connus sont : 
-</p>
-
-<div class="icons">
-	<div class="icon" data-time={4}>
-		<i class="fa fa-rss"></i>
-		<p>flux rss</p>
-	</div>
-
-	<div class="icon" data-time={4.2}>
-		<i class="fab fa-apple"></i>
-		<p>apple podcast</p>
-	</div>
-
-	<div class="icon" data-time={4.4}>
-		<i class="fab fa-google"></i>
-		<p>google podcast</p>
-	</div>
-
-	<div class="icon" data-time={4.6}>
-		<i class="fab fa-spotify"></i>
-		<p>spotify</p>
-	</div>
-
-	<div class="icon" data-time={4.8}>
-		<i class="fab fa-soundcloud"></i>
-		<p>soundcloud</p>
-	</div>
-</div>
-
-<p data-time={7}>
-	Cependant, leur diffusion était fait à l'origine par flux RSS. 
-</p>

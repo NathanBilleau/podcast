@@ -4,6 +4,7 @@
 html,
 body {
 	height: 100%;
+	overflow: hidden;
 }
 
 * {
@@ -21,7 +22,7 @@ h1 {
 p {
 	font-family: 'Karla';
 	font-weight: 400;
-	width: clamp(300px, 70vw, 600px);
+	width: clamp(300px, 70vw, 900px);
 	text-align: center;
 	margin: 7vh auto;
 	color: rgba(255, 255, 255, .9);
@@ -139,4 +140,14 @@ figure figcaption,
 .content .display {
 	transform: translateY(0)!important;
 	opacity: 1!important;
+}
+
+figure{
+	width: fit-content;
+	margin: auto;
+}
+
+figure img {
+	max-width: 30vw;
+	max-height: 30vh;
 }
