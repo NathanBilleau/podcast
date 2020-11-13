@@ -5,16 +5,6 @@
 
 	import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 
-
-	// import { spring } from 'svelte/motion';
-
-	// let coords = spring({ x: 50, y: 50 }, {
-	// 	stiffness: 0.1,
-	// 	damping: 0.5
-	// });
-
-	// let size = spring(7);
-
 	let prev = '/'
 	let next = '/'
 
@@ -29,20 +19,24 @@
 
 		const timingEls = document.querySelectorAll('[data-time]')
 
-		for (const el of timingEls) {
-			el.style.opacity = 0
-			el.style.transform = `translateY(10px)`
-			el.style.transition = '.8s cubic-bezier(.5, 0, .5, 1)'
+		if (false) {
+			for (const el of timingEls) {
+				el.style.opacity = 0
+				el.style.transform = `translateY(10px)`
+				el.style.transition = '.8s cubic-bezier(.5, 0, .5, 1)'
+			}
+
+			currentTime.subscribe(ct => {
+				for (const el of timingEls) {
+					const attrTime = el.getAttribute('data-time')
+					if (ct >= attrTime) {
+						el.classList.add('display')
+					}
+				}
+			})
 		}
 
-		currentTime.subscribe(ct => {
-			for (const el of timingEls) {
-				const attrTime = el.getAttribute('data-time')
-				if (ct >= attrTime) {
-					el.classList.add('display')
-				}
-			}
-		})
+		
 
 	})
 
@@ -58,11 +52,10 @@
 		background-color: #333;
 	}
 
-
 	.container {
-		padding: 0 clamp(80px, 8vw, 200px);
+		padding: 0 clamp(100px, 9vw, 200px);
 		display: grid;
-		grid-template-rows: clamp(80px, 8vw, 200px) auto clamp(100px, 10vw, 200px);
+		grid-template-rows: clamp(50px, 9vw, 200px) auto clamp(50px, 9vw, 200px);
 		height: 100%;
 	}
 
@@ -71,28 +64,9 @@
 		overflow-y: auto;
 	}
 	
-	/* svg {
-		width: 100%;
-		height: 100%;
-		margin: -8px;
-		position: absolute;
-	}
-	
-	circle {
-		fill: #fff
-	} */
-	
 </style>
 
 <main>
-	<!-- <svg
-		on:mousemove="{e => coords.set({ x: e.clientX, y: e.clientY })}"
-		on:mousedown="{() => size.set(20)}"
-		on:mouseup="{() => size.set(7)}"
-	>
-		<circle cx={$coords.x} cy={$coords.y} r={$size}/>
-	</svg> -->
-
 	<div class="container">
 		<div></div>
 		<div class="content">

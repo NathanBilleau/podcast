@@ -1,7 +1,6 @@
 <script>
 
 	import { onMount } from 'svelte'
-
 	import { currentTime, voicePlaying, end } from '../stores/voice'
 
 	export let prev, next
@@ -86,6 +85,7 @@
 	nav a.disabled,
 	nav .btn[disabled] {
 		opacity: .5;
+		cursor: auto;
 	}
 
 	nav .btn {
@@ -94,7 +94,6 @@
 		right: 0;
 		left: 0;
 		transition: .2s cubic-bezier(.83,0,.31,.94);
-		/* display: none; */
 	}
 
 </style>
@@ -104,11 +103,11 @@
 		Précédent
 	</a>
 
-	<button class="btn" on:click="{toggleVoice}" disabled="{!$end}">
+	<button class="btn" on:click="{toggleVoice}" disabled="{!$end}" title="Lecture">
 		<i class="fas fa-volume-{$voicePlaying ? 'mute' : 'up'}"></i>
 	</button>
 
-	<a href="{next}" class="{next && ($currentTime >= $end) ? '' : 'disabled'}" disabled="{!($currentTime >= $end)}">
+	<a href="{($end === undefined) || ($currentTime >= $end) ? next : undefined}" class="{($end === undefined) || next && ($currentTime >= $end) ? '' : 'disabled'}">
 		Suivant
 	</a>
 </nav>
