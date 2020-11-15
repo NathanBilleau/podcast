@@ -21,7 +21,9 @@
 
 		const timingEls = document.querySelectorAll('[data-time]')
 
-		if (true) {
+		// animation display on/off
+		if (false) {
+
 			for (const el of timingEls) {
 				el.style.opacity = 0
 				el.style.transform = `translateY(10px)`

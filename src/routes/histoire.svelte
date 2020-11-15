@@ -2,7 +2,8 @@
 
 	import { end } from '../stores/voice'
 
-	import arte from '../images/arte.png'
+	import arte from '../images/logo-arte.svg'
+	import serial from '../images/serial.svg'
 
 	$end = 7
 	
@@ -38,9 +39,15 @@
 		<p>Smartphone</p>
 	</div>
 </div>
-<!-- 
-<figure>
-	<img src={arte} alt="arte-radio">
-    <figcaption>arte-radio.com</figcaption>
-</figure> -->
 
+<div class="rowImages">
+	<figure>
+		<img src={arte} alt="arte-radio">
+		<figcaption>arte-radio.com</figcaption>
+	</figure>
+
+	<figure>
+		<img src={serial} alt="serial">
+		<figcaption>serial</figcaption>
+	</figure>
+</div>

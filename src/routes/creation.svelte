@@ -1,7 +1,7 @@
 <script>
 
     import { end } from '../stores/voice'
-    $end = 16
+    $end = 18
 
 </script>
 
@@ -11,7 +11,12 @@
 
 
 <h1>La création</h1>
-<p data-time={9}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea non odio aspernatur ut alias voluptatum itaque? Illo quas dicta quidem placeat, unde iure! Eligendi dolore aspernatur accusantium cupiditate optio et?</p>
+
+<p data-time={9}>
+    La création d'épisode est faisable par tous à condition d'avoir une idée, un ordinateur, et une connexion internet. Beaucoup de type de podcasts existent et ne nécéssitent pas tous les mêmes moyens. 
+    <br />
+    Il faut parfois seulement une personne et un micro, mais parfois il faut un lieu approprié, une équipe ou du matériel spécifique.
+</p>
 
 <div class="icons">
 
@@ -41,3 +46,7 @@
     </div>
 
 </div>
+
+<p data-time={17}>
+    Une fois l'épisode prêt, il peut être diffusé.
+</p>

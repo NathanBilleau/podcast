@@ -7,7 +7,16 @@
 
 	let voice
 
+	let boopSfx
+	let endSfx
+
 	onMount(() => {
+		boopSfx = new Audio('/sfx/mixkit-cool-interface-click-tone-2568.wav')
+		endSfx = new Audio('/sfx/mixkit-negative-tone-interface-tap-2569.wav')
+
+		boopSfx.volume = .1
+		endSfx.volume = .1
+
 		voice = new Audio('/voice.mp3')
 		voice.addEventListener('timeupdate', e => {
 			currentTime.set(voice.currentTime)
@@ -16,16 +25,23 @@
 		currentTime.subscribe(value => {
 			if (value >= $end) {
 				pause()
+				endSfx.play()
 			}
 		})
 	})
+
+	const boop = () => {
+		boopSfx.play()
+	}
 
 	const toggleVoice = () => {
 		if ($voicePlaying) {
 			pause()
 		}
 		else {
-			play()
+			if ($currentTime < $end) {
+				play()
+			}
 		}
 	}
 
@@ -99,15 +115,17 @@
 </style>
 
 <nav>
-	<a href="{prev}" class="{prev ? '' : 'disabled'}">
+	<a href="{prev}" class="{prev ? '' : 'disabled'}" on:mouseover="{boop}">
 		Précédent
 	</a>
 
-	<button class="btn" on:click="{toggleVoice}" disabled="{!$end}" title="Lecture">
+	<button class="btn" on:mouseover="{boop}" on:click="{toggleVoice}" disabled="{!$end}" title="Lecture">
 		<i class="fas fa-volume-{$voicePlaying ? 'mute' : 'up'}"></i>
 	</button>
 
-	<a href="{($end === undefined) || ($currentTime >= $end) ? next : undefined}" class="{($end === undefined) || next && ($currentTime >= $end) ? '' : 'disabled'}">
+	<a 	href="{($end === undefined) || ($currentTime >= $end) ? next : undefined}"
+		class="{($end === undefined) || next && ($currentTime >= $end) ? '' : 'disabled'}"
+		on:mouseover="{($end === undefined) || next && ($currentTime >= $end) ? boop : null}">
 		Suivant
 	</a>
 </nav>

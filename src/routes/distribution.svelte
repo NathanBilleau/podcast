@@ -13,7 +13,9 @@
 <h1>La distribution</h1>
 
 <p data-time={17}>
-	La plupart des utilisateurs écoutent ces podcasts sur différentes plateformes. Les plus connus sont : 
+	La plupart des utilisateurs écoutent ces podcasts sur différentes plateformes. Cependant, leur diffusion était fait à l'origine par flux RSS. 
+	<br />
+	Les plateformes de streaming les plus utilisées sont : 
 </p>
 
 <div class="icons">
@@ -42,7 +44,3 @@
 		<p>soundcloud</p>
 	</div>
 </div>
-
-<p data-time={23}>
-	Cependant, leur diffusion était fait à l'origine par flux RSS. 
-</p>

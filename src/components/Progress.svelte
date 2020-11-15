@@ -14,7 +14,7 @@
     .progressContainer .progress {
         height: 100%;
         background-color: #fff;
-        transition: .2s cubic-bezier(.5, 0, .5, 1);
+        transition: 1s cubic-bezier(.5, 0, .5, 1);
     }
 </style>
 
