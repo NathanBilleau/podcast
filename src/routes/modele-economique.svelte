@@ -1,7 +1,9 @@
 <script>
 
     import { end } from '../stores/voice'
-    $end = 40
+	$end = 40
+	
+	import Figure from '../components/Figure.svelte'
 
 	import nouvellesecoutes from '../images/nouvellesecoutes.png'
 	import bingeaudio from '../images/bingeaudio.png'
@@ -21,21 +23,10 @@
 	Malgré une implantation de plus en plus importante, il n’y a pas un modèle économique universel. Pour le comprendre, il faut différencier les podcasts indépendants et les podcasts produits par des maisons de productions.
 </p>
 
-<div class="rowImages">
-	<figure>
-		<img src={nouvellesecoutes} alt="Nouvelles écoutes">
-		<figcaption>Nouvelles écoutes</figcaption>
-	</figure>
-
-	<figure>
-		<img src={bingeaudio} alt="Binge audio">
-		<figcaption>Binge audio</figcaption>
-	</figure>
-
-	<figure>
-		<img src={parcast} alt="Parcast">
-		<figcaption>Parcast</figcaption>
-	</figure>
+<div class="row">
+	<Figure image={nouvellesecoutes} text="Nouvelles écoutes" time={2} />
+	<Figure image={bingeaudio} text="Binge Audio" time={2} />
+	<Figure image={parcast} text="Parcast" time={2} />
 </div>
 
 <p>

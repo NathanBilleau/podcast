@@ -1,7 +1,9 @@
 <script>
 
     import { end } from '../stores/voice'
-    $end = 40
+	$end = 40
+	
+	import Figure from '../components/Figure.svelte'
 
 	import floodcast from '../images/floodcast.jpg'
 
@@ -18,12 +20,7 @@
 	Parmis les podcasts indépendants les plus populaires en France, nous pouvons prendre “Floodcast”. Animé par Florent Bernard et Adrien Ménielle, c’est un podcast “talkshow”. Des auteurs, des comédiens, ou d’autres personnalités d’internet sont invités et pendant près d’1:30 ils discutent, font des jeux et rient.
 </p>
 
-<figure>
-	<img src={floodcast} alt="Floodcast" >
-	<figcaption>
-		Floodcast
-	</figcaption>
-</figure>
+<Figure image={floodcast} text="Floodcast" time={3} />
 
 <p>
 	Le podcast est financé en majorité avec l'enregistrement “en public” au Bataclan qui a eu lieu 2 fois. Le public est toujours très présent, les places ont été vendues en quelques minutes. Le format s’adapte à la scène et permet au Floodcast d’évoluer.

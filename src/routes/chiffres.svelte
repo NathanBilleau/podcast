@@ -3,6 +3,7 @@
 	import { end } from '../stores/voice'
 	import serial from '../images/serial.svg'
 	import Chart from '../components/Chart.svelte'
+	import Figure from '../components/Figure.svelte'
 
     $end = 40
 
@@ -23,12 +24,7 @@
 	En 2014, le podcast Serial marque un renouveau. Il est devenu premier du classement iTunes dès le début de sa diffusion en atteignant plus de 5 millions d’écoutes et de téléchargements. Suite à cette série, la popularité des podcasts explose aux États-Unis.
 </p>
 
-<figure>
-	<img src={serial} alt="Serial">
-	<figcaption>
-		Serial
-	</figcaption>
-</figure>
+<Figure time={2} image={serial} text="Serial" />
 
 <Chart time={3} data={[
 	{percent: 49, text: 'Maison'},

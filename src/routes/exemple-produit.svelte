@@ -3,7 +3,8 @@
     import { end } from '../stores/voice'
     $end = 40
 
-	import abttr from '../images/abttr.jpg'
+	import abdtr from '../images/abdtr.jpg'
+	import Figure from '../components/Figure.svelte'
 
 </script>
 
@@ -20,9 +21,4 @@
 	Elle invite toute sorte de personnalité sur la scène de la “Nouvelle Seine” en les amenant sur différents sujets qu’ils n'aborderaient pas forcément en interview classique accompagné de son caractère et de son humour bien à elle.
 </p>
 
-<figure>
-	<img src={abttr} alt="A bientôt de te revoir" >
-	<figcaption>
-		A bientôt de te revoir
-	</figcaption>
-</figure>
+<Figure image={abdtr} text="A bientôt de te revoir" />

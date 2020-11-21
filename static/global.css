@@ -20,7 +20,9 @@ h1 {
 	margin-bottom: 4vh;
 }
 
-p {
+.credits .label,
+p,
+.content a {
 	font-family: 'Karla';
 	font-weight: 400;
 	width: clamp(300px, 70vw, 900px);
@@ -32,7 +34,8 @@ p {
 p,
 .icons,
 figure,
-.chartContainer {
+.chartContainer,
+.credits{
 	margin: 4vh auto;
 }
 
@@ -78,10 +81,10 @@ h1, b {
 
 
 .icons,
-.rowImages {
+.row {
 	display: flex;
 	justify-content: space-between;
-	gap: 100px;
+	gap: clamp(30px, 5vw, 100px);
 	width: fit-content;
 	margin-left: auto;
 	margin-right: auto;
@@ -203,4 +206,30 @@ figure img {
 
 .chartContainer .chart:hover {
 	background-color: rgba(255, 255, 255, .6);
+}
+
+.credits {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 50px 30px;
+}
+
+.credits .label {
+	text-align: right;
+	width: initial;
+	margin: initial;
+	font-weight: 400!important;
+}
+
+.credits .text{
+	text-align: left;
+}
+
+.credits .text a {
+	font-weight: 700!important;
+	text-decoration: none;
+	display: block;
+	width: fit-content;
+	margin: 0;
+	margin-bottom: 1em;
 }

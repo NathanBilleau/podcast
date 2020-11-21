@@ -1,6 +1,8 @@
 <script>
 
 	import { end } from '../stores/voice'
+	
+	import Figure from '../components/Figure.svelte'
 	import buzzsprout from '../images/buzzsprout.png'
 	import podbean from '../images/podbean.svg'
 	import spreaker from '../images/spreaker.png'
@@ -46,19 +48,8 @@
 	Pour faciliter cette diffusion et l’hébergement des fichiers audio, plusieurs services existent, les plus connus étant : Buzzsprout, PodBean, Spreaker…
 </p>
 
-<div class="rowImages">
-	<figure>
-		<img src={buzzsprout} alt="Buzzsprout">
-		<figcaption>Buzzsprout</figcaption>
-	</figure>
-
-	<figure>
-		<img src={podbean} alt="Podbean">
-		<figcaption>Podbean</figcaption>
-	</figure>
-
-	<figure>
-		<img src={spreaker} alt="Spreaker">
-		<figcaption>Spreaker</figcaption>
-	</figure>
+<div class="row">
+	<Figure image={buzzsprout} text="Buzzsprout" time={2} />
+	<Figure image={podbean} text="Podbean" time={2.5} />
+	<Figure image={spreaker} text="Spreaker" time={2.5} />
 </div>

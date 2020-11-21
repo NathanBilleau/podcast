@@ -3,7 +3,8 @@
 	import { end } from '../stores/voice'
 
 	import arte from '../images/logo-arte.svg'
-	import serial from '../images/serial.svg'
+
+	import Figure from '../components/Figure.svelte'
 
 	$end = 7
 	
@@ -44,7 +45,4 @@
 	</div>
 </div>
 
-<figure>
-	<img src={arte} alt="arte-radio">
-	<figcaption>arte-radio.com</figcaption>
-</figure>
+<Figure image={arte} text="Arte-radio.com" time={3} />
