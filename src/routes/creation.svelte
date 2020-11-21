@@ -1,7 +1,8 @@
 <script>
 
-    import { end } from '../stores/voice'
-    $end = 18
+    import { start, end } from '../stores/voice'
+    $start = 15
+    $end = 20
 
 </script>
 

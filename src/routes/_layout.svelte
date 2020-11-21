@@ -2,7 +2,7 @@
 	import Nav from '../components/Nav.svelte'
 	import Progress from '../components/Progress.svelte'
 	import { afterUpdate } from 'svelte'
-	import { currentTime, end, start } from '../stores/voice'
+	import { currentTime, start } from '../stores/voice'
 
 	import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 
@@ -11,11 +11,16 @@
 
 	let routes = ['/', '/introduction', '/histoire', '/chiffres', '/creation', '/diffusion', '/cible', '/modele-economique', '/les-maisons-de-production', '/les-podcasts-independants', '/les-podcasts-produits', '/avis-personnel', '/credits']
 	let i
+	
 
 	// set the currentime to the starting time for the page
-	$currentTime = $start
+	start.subscribe(s => {
+		$currentTime = s
+	})
+
 
 	afterUpdate(() => {
+
 		let currentRoute = window.location.pathname
 		i = routes.indexOf(currentRoute)
 

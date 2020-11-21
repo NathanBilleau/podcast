@@ -6,8 +6,8 @@
 
 	import Figure from '../components/Figure.svelte'
 
-	$start = 6
-	$end = 9
+	$start = 5
+	$end = 10
 </script>
 
 <style>

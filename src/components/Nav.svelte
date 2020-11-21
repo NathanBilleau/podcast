@@ -1,7 +1,7 @@
 <script>
 
 	import { onMount } from 'svelte'
-	import { currentTime, voicePlaying, end, start } from '../stores/voice'
+	import { currentTime, voicePlaying, end } from '../stores/voice'
 
 	export let prev, next
 
@@ -12,15 +12,12 @@
 
 	onMount(() => {
 		voice = document.querySelector('audio')
-		voice.addEventListener('canplaythrough', evt => {
-			console.log('can play')
-		})
 
 		boopSfx = new Audio('/sfx/mixkit-cool-interface-click-tone-2568.wav')
-		.volume = .1
+		boopSfx.volume = .1
 
 		endSfx = new Audio('/sfx/mixkit-negative-tone-interface-tap-2569.wav')
-		.volume = .1
+		endSfx.volume = .1
 
 		// if the voice reaches the end for the page
 		currentTime.subscribe(value => {

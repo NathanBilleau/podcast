@@ -1,11 +1,12 @@
 <script>
 
-	import { end } from '../stores/voice'
+	import { start, end } from '../stores/voice'
 	import serial from '../images/serial.svg'
 	import Chart from '../components/Chart.svelte'
 	import Figure from '../components/Figure.svelte'
 
-    $end = 40
+	$start = 10
+    $end = 15
 
 </script>
 
