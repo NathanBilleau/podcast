@@ -121,7 +121,7 @@
 </style>
 
 <!-- svelte-ignore a11y-media-has-caption -->
-<audio src="/voice.mp3" bind:currentTime={$currentTime}></audio>
+<audio src="/voice2.mp3" bind:currentTime={$currentTime}></audio>
 
 <nav>
 	<a href="{prev}" class="{prev ? '' : 'disabled'}" on:mouseover="{boop}">
