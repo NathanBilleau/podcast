@@ -9,7 +9,7 @@
 	let prev = '/'
 	let next = '/'
 
-	let routes = ['/', '/histoire', '/creation', '/distribution']
+	let routes = ['/', '/introduction', '/histoire', '/chiffres', '/creation', '/diffusion', '/cible', '/modele-economique', '/les-maisons-de-production', '/les-podcasts-independants', '/les-podcasts-produits', '/avis-personnel', '/credits']
 	let i
 
 	afterUpdate(() => {
@@ -22,7 +22,7 @@
 		const timingEls = document.querySelectorAll('[data-time]')
 
 		// animation display on/off
-		if (false) {
+		if (true) {
 
 			for (const el of timingEls) {
 				el.style.opacity = 0
@@ -59,7 +59,8 @@
 	.container {
 		padding: 0 clamp(100px, 9vw, 200px);
 		display: grid;
-		grid-template-rows: clamp(50px, 7vh, 200px) auto clamp(120px, 12vh, 200px);
+		grid-template-rows: auto clamp(120px, 12vh, 200px);
+		/* grid-template-rows: clamp(50px, 7vh, 200px) auto clamp(120px, 12vh, 200px); */
 		height: 100%;
 	}
 
@@ -75,7 +76,7 @@
 
 <main>
 	<div class="container">
-		<Progress totalRoutes={routes.length} i={i} />
+		<!-- <Progress totalRoutes={routes.length} i={i} /> -->
 		<div class="content">
 			<slot></slot>
 		</div>

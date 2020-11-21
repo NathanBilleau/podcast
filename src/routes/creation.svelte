@@ -12,14 +12,15 @@
 
 <h1>La création</h1>
 
-<p data-time={9}>
-    La création d'épisode est faisable par tous à condition d'avoir une idée, un ordinateur, et une connexion internet. Beaucoup de type de podcasts existent et ne nécéssitent pas tous les mêmes moyens. 
-    <br />
-    Il faut parfois seulement une personne et un micro, mais parfois il faut un lieu approprié, une équipe ou du matériel spécifique.
+<p>
+    La création d'épisode est faisable par tous à condition d'avoir une idée, un ordinateur, et une connexion internet. Les types de podcasts sont très diversifiés et ne nécessitent pas tous les mêmes moyens.
+</p>
+
+<p>
+    Dans certains cas, il faut seulement une personne et un micro, mais dans d’autres il faut un lieu approprié, une équipe ou du matériel spécifique.
 </p>
 
 <div class="icons">
-
     <div class="icon" data-time={12}>
         <i class="fa fa-lightbulb"></i>
         <p>une idée</p>
@@ -44,9 +45,8 @@
         <i class="fa fa-podcast"></i>
         <p>Diffusion</p>
     </div>
-
 </div>
 
-<p data-time={17}>
+<p>
     Une fois l'épisode prêt, il peut être diffusé.
 </p>

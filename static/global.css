@@ -31,7 +31,8 @@ p {
 
 p,
 .icons,
-figure {
+figure,
+.chartContainer {
 	margin: 4vh auto;
 }
 
@@ -152,6 +153,54 @@ figure {
 }
 
 figure img {
-	max-width: 30vw;
-	max-height: 30vh;
+	max-width: 20vw;
+	max-height: 20vh;
+}
+
+
+.chartContainer {
+	background-color: transparent;
+	border: 1px solid #fff;
+	height: 30px;
+	width: 500px;
+	display: block;
+	padding: 3px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.chartContainer .chart {
+	width: attr('data-percent');
+	height: 100%;
+	background-color: rgba(255, 255, 255, .5);
+	border: 1px solid rgba(255, 255, 255, .8);
+	color: #000;
+	font-family: 'Karla';
+	font-size: .8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	box-sizing: border-box;
+	position: relative;
+	cursor: pointer;
+	transition: .3s cubic-bezier(.5, 0, .5, 1);
+}
+
+.chartContainer .chart::after {
+	content: attr(data-percent);
+	position: absolute;
+	top: 0;
+	color: #fff;
+	opacity: 0;
+	transition: .3s cubic-bezier(.5, 0, .5, 1);
+}
+
+.chartContainer .chart:hover::after {
+	top: -25px;
+	opacity: 1;
+}
+
+.chartContainer .chart:hover {
+	background-color: rgba(255, 255, 255, .6);
 }

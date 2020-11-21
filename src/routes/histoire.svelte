@@ -20,7 +20,11 @@
 <h1>L'histoire du podcast</h1>
 
 <p data-time={1}>
-	Le principe du <b>podcast</b> existe depuis le début des années 2000. D'après Wikipédia, ce sont des épisodes de série audio que les utilisateurs peuvent télécharger ou écouter de façon nomade, en effet les supports d'écoutes sont multiples : 
+	Pour commencer, le mot podcast vient de la combinaison d’iPod et Broadcasting et son principe existe depuis le début des années 2000.
+</p>
+
+<p>
+	D'après Wikipédia, ce sont des épisodes de série audio que les utilisateurs peuvent télécharger ou écouter de façon nomade, en effet les supports d'écoutes sont multiples :
 </p>
 
 <div class="icons">
@@ -40,14 +44,7 @@
 	</div>
 </div>
 
-<div class="rowImages">
-	<figure>
-		<img src={arte} alt="arte-radio">
-		<figcaption>arte-radio.com</figcaption>
-	</figure>
-
-	<figure>
-		<img src={serial} alt="serial">
-		<figcaption>serial</figcaption>
-	</figure>
-</div>
+<figure>
+	<img src={arte} alt="arte-radio">
+	<figcaption>arte-radio.com</figcaption>
+</figure>
