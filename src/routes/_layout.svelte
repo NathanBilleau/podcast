@@ -2,7 +2,7 @@
 	import Nav from '../components/Nav.svelte'
 	import Progress from '../components/Progress.svelte'
 	import { afterUpdate } from 'svelte'
-	import { currentTime, end } from '../stores/voice'
+	import { currentTime, end, start } from '../stores/voice'
 
 	import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 
@@ -12,6 +12,9 @@
 	let routes = ['/', '/introduction', '/histoire', '/chiffres', '/creation', '/diffusion', '/cible', '/modele-economique', '/les-maisons-de-production', '/les-podcasts-independants', '/les-podcasts-produits', '/avis-personnel', '/credits']
 	let i
 
+	// set the currentime to the starting time for the page
+	$currentTime = $start
+
 	afterUpdate(() => {
 		let currentRoute = window.location.pathname
 		i = routes.indexOf(currentRoute)
@@ -19,11 +22,11 @@
 		prev = routes[i - 1]
 		next = routes[i + 1]
 
+		// animation display
 		const timingEls = document.querySelectorAll('[data-time]')
 
-		// animation display on/off
+		// on/off
 		if (true) {
-
 			for (const el of timingEls) {
 				el.style.opacity = 0
 				el.style.transform = `translateY(10px)`
@@ -59,8 +62,8 @@
 	.container {
 		padding: 0 clamp(100px, 9vw, 200px);
 		display: grid;
-		grid-template-rows: auto clamp(120px, 12vh, 200px);
-		/* grid-template-rows: clamp(50px, 7vh, 200px) auto clamp(120px, 12vh, 200px); */
+		/* grid-template-rows: auto clamp(120px, 12vh, 200px); */
+		grid-template-rows: 100px auto clamp(120px, 12vh, 200px);
 		height: 100%;
 	}
 
@@ -76,7 +79,7 @@
 
 <main>
 	<div class="container">
-		<!-- <Progress totalRoutes={routes.length} i={i} /> -->
+		<Progress totalRoutes={routes.length} i={i} />
 		<div class="content">
 			<slot></slot>
 		</div>

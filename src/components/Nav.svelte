@@ -1,7 +1,7 @@
 <script>
 
 	import { onMount } from 'svelte'
-	import { currentTime, voicePlaying, end } from '../stores/voice'
+	import { currentTime, voicePlaying, end, start } from '../stores/voice'
 
 	export let prev, next
 
@@ -11,23 +11,25 @@
 	let endSfx
 
 	onMount(() => {
-		boopSfx = new Audio('/sfx/mixkit-cool-interface-click-tone-2568.wav')
-		endSfx = new Audio('/sfx/mixkit-negative-tone-interface-tap-2569.wav')
-
-		boopSfx.volume = .1
-		endSfx.volume = .1
-
-		voice = new Audio('/voice.mp3')
-		voice.addEventListener('timeupdate', e => {
-			currentTime.set(voice.currentTime)
+		voice = document.querySelector('audio')
+		voice.addEventListener('canplaythrough', evt => {
+			console.log('can play')
 		})
 
+		boopSfx = new Audio('/sfx/mixkit-cool-interface-click-tone-2568.wav')
+		.volume = .1
+
+		endSfx = new Audio('/sfx/mixkit-negative-tone-interface-tap-2569.wav')
+		.volume = .1
+
+		// if the voice reaches the end for the page
 		currentTime.subscribe(value => {
 			if (value >= $end) {
 				pause()
 				endSfx.play()
 			}
 		})
+
 	})
 
 	const boop = () => {
@@ -112,7 +114,14 @@
 		transition: .2s cubic-bezier(.83,0,.31,.94);
 	}
 
+	audio {
+		display: none;
+	}
+
 </style>
+
+<!-- svelte-ignore a11y-media-has-caption -->
+<audio src="/voice.mp3" bind:currentTime={$currentTime}></audio>
 
 <nav>
 	<a href="{prev}" class="{prev ? '' : 'disabled'}" on:mouseover="{boop}">

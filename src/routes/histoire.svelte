@@ -1,13 +1,13 @@
 <script>
 
-	import { end } from '../stores/voice'
+	import { end, start } from '../stores/voice'
 
 	import arte from '../images/logo-arte.svg'
 
 	import Figure from '../components/Figure.svelte'
 
-	$end = 7
-	
+	$start = 6
+	$end = 9
 </script>
 
 <style>
