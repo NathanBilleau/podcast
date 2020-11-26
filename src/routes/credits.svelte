@@ -42,13 +42,3 @@
         <a href="https://podmust.com/podcast-definition-histoire/" target="_blank" rel="noopener noreferrer">podmust.com</a>
     </div>
 </div>
-<!-- 
-<p>
-    Voix off : <a href="https://www.linkedin.com/in/etienne-cuminal-01b5981b3/?originalSubdomain=fr" target="_blank" rel="noopener noreferrer">Etienne Cuminal</a>
-</p>
-<p>
-    Contenu et développement : <a href="https://nathanbilleau.com" target="_blank" rel="noopener noreferrer">Nathan Billeau</a>
-</p>
-<p>
-    Sources : <a href="https://www.podcastinsights.com/fr/podcast-statistics/">Podcast Insights</a>,  <a href="https://www.podcastinsights.com/fr/podcast-statistics/">Podcast Insights</a>
-</p> -->

@@ -1,7 +1,8 @@
 <script>
 
-    import { end } from '../stores/voice'
-    $end = 40
+    import { start, end } from '../stores/voice'
+    $start = 60 * 5 + 5.5
+    $end = 60 * 5 + 35
 
     import Figure from '../components/Figure.svelte'
 
@@ -16,19 +17,19 @@
 
 <h1>Avis personnel sur le média</h1>
 
-<p>
+<p data-time={60 * 5 + 5.6}>
     La grande portabilité de ce format explique selon moi sa popularité grandissante. J’écoute des épisodes en travaillant ou dans les transports ce qui me permet de me divertir et d’apprendre des choses tout en étant productif.
 </p>
 
 <div class="row">
-    <Figure image={floodcast} text="Floodcast" />
-    <Figure image={abdtr} text="A bientôt de te revoir" />
-    <Figure image={syntax} text="Syntax" />
-    <Figure image={serialkillers} text="Tueurs en séries" />
-    <Figure image={lapoudre} text="La poudre" />
+    <Figure time={60 * 5 + 20} image={floodcast} text="Floodcast" />
+    <Figure time={60 * 5 + 21} image={abdtr} text="A bientôt de te revoir" />
+    <Figure time={60 * 5 + 23.7} image={syntax} text="Syntax" />
+    <Figure time={60 * 5 + 24.7} image={serialkillers} text="Tueurs en séries" />
+    <Figure time={60 * 5 + 26.5} image={lapoudre} text="La poudre" />
 </div>
 
-<p>
+<p data-time={60 * 5 + 29}>
     Comme montré précédemment, ce média permet une grande diversité de format et de thèmes. 
 </p>
 

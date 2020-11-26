@@ -1,0 +1,1017 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE sesx>
+<sesx version="1.9">
+
+  <session appBuild="13.0.8.43" appVersion="13.0" audioChannelType="mono" bitDepth="16" duration="15097734" sampleRate="44100">
+    <tracks>
+      <audioTrack automationLaneOpenState="false" id="10001" index="1" select="true" visible="true">
+        <trackParameters trackHeight="108" trackHue="160" trackMinimized="false">
+          <name>Track 1</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="mono" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="684d9b75-c45f-45db-a31e-63b9ec2b5f68" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="60af69c9-ccac-4fd4-80c5-7a7241e5b2d1" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="014e4862-1503-446b-abdb-0ec5926f5e59" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <component componentGuid="9bce1744-30f1-40cb-8c52-925639ec3408" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Low Shelf Frequency" parameterValue="0.0009078529546968638896942138671875"/>
+            <parameter index="1" name="Low Shelf Gain" parameterValue="0.5"/>
+            <parameter index="2" name="High Shelf Frequency" parameterValue="0.816159784793853759765625"/>
+            <parameter index="3" name="High Shelf Gain" parameterValue="0.5"/>
+            <parameter index="4" name="EQ Band 1 Center Frequency" parameterValue="0.0013617794029414653778076171875"/>
+            <parameter index="5" name="EQ Band 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ Band 1 Gain" parameterValue="0.5"/>
+            <parameter index="7" name="EQ Band 1 Enable" parameterValue="1"/>
+            <parameter index="8" name="EQ Band 2 Center Frequency" parameterValue="0.008170676417648792266845703125"/>
+            <parameter index="9" name="EQ Band 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ Band 2 Gain" parameterValue="0.5"/>
+            <parameter index="11" name="EQ Band 2 Enable" parameterValue="1"/>
+            <parameter index="12" name="EQ Band 3 Center Frequency" parameterValue="0.0354062654078006744384765625"/>
+            <parameter index="13" name="EQ Band 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ Band 3 Gain" parameterValue="0.5"/>
+            <parameter index="15" name="EQ Band 3 Enable" parameterValue="1"/>
+            <parameter index="16" name="EQ Band 4 Center Frequency" parameterValue="0.144348621368408203125"/>
+            <parameter index="17" name="EQ Band 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ Band 4 Gain" parameterValue="0.5"/>
+            <parameter index="19" name="EQ Band 4 Enable" parameterValue="1"/>
+            <parameter index="20" name="EQ Band 5 Center Frequency" parameterValue="0.580118000507354736328125"/>
+            <parameter index="21" name="EQ Band 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ Band 5 Gain" parameterValue="0.5"/>
+            <parameter index="23" name="EQ Band 5 Enable" parameterValue="1"/>
+            <parameter index="24" name="Master Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Low Shelf Filter Order" parameterValue="0"/>
+            <parameter index="27" name="High Shelf Filter Order" parameterValue="0"/>
+            <parameter index="28" name="Ultra-Quiet Mode" parameterValue="0"/>
+            <parameter index="29" name="Low Shelf Enable" parameterValue="1"/>
+            <parameter index="30" name="High Shelf Enable" parameterValue="1"/>
+            <parameter index="31" name="Original Sample Rate" parameterValue="0.22968749701976776123046875"/>
+            <parameter index="32" name="EQ Band 1 Bandwidth" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ Band 2 Bandwidth" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ Band 3 Bandwidth" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ Band 4 Bandwidth" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ Band 5 Bandwidth" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="High-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="38" name="High-Pass Cutoff Frequency" parameterValue="0"/>
+            <parameter index="39" name="High-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Low-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="41" name="Low-Pass Cutoff Frequency" parameterValue="0.906945049762725830078125"/>
+            <parameter index="42" name="Low-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="LowGraphRange" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <effectsRack preFader="true">
+          <component componentGuid="be8dce48-d9bc-4067-9293-2eb22639b38e" componentID="Audition.ComponentGroup" id="rackMix" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" parameterValue="0.10000002384185791015625"/>
+          </component>
+          <component componentGuid="9af64c3e-0eda-4a29-beab-f9420c49ca75" id="rackInput" powered="true">
+            <parameter index="0" parameterValue="1"/>
+            <parameter index="1" parameterValue="0"/>
+          </component>
+          <component componentGuid="69f4fdba-7da3-4f0a-910c-0876ecaa9969" id="rackOutput" powered="true">
+            <parameter index="0" parameterValue="1"/>
+            <parameter index="1" parameterValue="0"/>
+          </component>
+          <slot powered="true" slotIndex="0">
+            <component componentGuid="1d7a862a-d57c-4858-8dbd-b5e6266d4b60" componentID="f76dad9c-77da-477a-9939-eefefc5c23bd" editorHeight="723" editorLeft="453" editorTop="75" editorWidth="534" name="Dynamics Processing" presetName="Vocal Limiter">
+              <busConfig><![CDATA[{"in":[{"layout":[0],"name":"","type":0},{"layout":[0],"name":"Side-Chain In","type":1}],"out":[{"layout":[0],"name":"","type":0}]}]]></busConfig>
+              <channelMap direction="input">
+                <channel index="0" sourceIndex="0"/>
+              </channelMap>
+              <channelMap direction="output">
+                <channel index="0" sourceIndex="0"/>
+              </channelMap>
+              <parameter index="0" name="Level Detector - Attack Time" parameterValue="0.00200000009499490261077880859375"/>
+              <parameter index="1" name="Level Detector - Release Time" parameterValue="0.1500000059604644775390625"/>
+              <parameter index="2" name="Gain Processor - Attack Time" parameterValue="0"/>
+              <parameter index="3" name="Gain Processor - Release Time" parameterValue="0.100000001490116119384765625"/>
+              <parameter index="4" name="Lookahead Time" parameterValue="0.006000000052154064178466796875"/>
+              <parameter index="5" name="Input Gain" parameterValue="0.5"/>
+              <parameter index="6" name="Output Gain" parameterValue="0.5"/>
+              <parameter index="7" name="Low Cutoff" parameterValue="0"/>
+              <parameter index="8" name="High Cutoff" parameterValue="1"/>
+              <parameter index="9" name="Lock Filter" parameterValue="0"/>
+              <parameter index="10" name="Number of X/Y Pairs" parameterValue="0.4285714328289031982421875"/>
+              <parameter index="11" name="Link Channels" parameterValue="0"/>
+              <parameter index="12" name="Peak/RMS" parameterValue="1"/>
+              <parameter index="13" name="Envelope Only" parameterValue="0"/>
+              <parameter index="14" name="Spline Curves" parameterValue="0"/>
+              <parameter index="15" name="Noise Gating (if expanding more than 50:1)" parameterValue="0"/>
+              <parameter index="16" name="Current Tab" parameterValue="1"/>
+              <parameter index="17" name="Location1" parameterValue="0"/>
+              <parameter index="18" name="Value1" parameterValue="0"/>
+              <parameter index="19" name="Location2" parameterValue="0.920000016689300537109375"/>
+              <parameter index="20" name="Value2" parameterValue="0.920000016689300537109375"/>
+              <parameter index="21" name="Location3" parameterValue="1"/>
+              <parameter index="22" name="Value3" parameterValue="0.933000028133392333984375"/>
+              <parameter index="23" name="Location4" parameterValue="1"/>
+              <parameter index="24" name="Value4" parameterValue="1"/>
+              <parameter index="25" name="Location5" parameterValue="1"/>
+              <parameter index="26" name="Value5" parameterValue="1"/>
+              <parameter index="27" name="Location6" parameterValue="1"/>
+              <parameter index="28" name="Value6" parameterValue="1"/>
+              <parameter index="29" name="Location7" parameterValue="1"/>
+              <parameter index="30" name="Value7" parameterValue="1"/>
+              <parameter index="31" name="Make-Up Gain" parameterValue="0"/>
+            </component>
+          </slot>
+          <slot powered="true" slotIndex="1">
+            <component componentGuid="c6548da5-6fe2-49f3-ada0-dd358733b25d" componentID="aeb0b5ea-5024-4f02-8097-81f8fd7aba92" editorHeight="459" editorLeft="439" editorTop="207" editorWidth="563" name="DeReverb" presetName="Light Reverb Reduction">
+              <busConfig><![CDATA[{"in":[{"layout":[0],"name":"","type":0}],"out":[{"layout":[0],"name":"","type":0}]}]]></busConfig>
+              <channelMap direction="input">
+                <channel index="0" sourceIndex="0"/>
+              </channelMap>
+              <channelMap direction="output">
+                <channel index="0" sourceIndex="0"/>
+              </channelMap>
+              <presetChunkData><![CDATA[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]]></presetChunkData>
+            </component>
+          </slot>
+          <slot powered="true" slotIndex="2">
+            <component componentGuid="087d8020-9146-44dc-8108-d6f01064ffba" componentID="c6762838-e451-4d22-9c90-b0eaa734605a" editorHeight="459" editorLeft="417" editorTop="207" editorWidth="606" name="DeNoise" presetName="Light Noise Reduction">
+              <busConfig><![CDATA[{"in":[{"layout":[0],"name":"","type":0}],"out":[{"layout":[0],"name":"","type":0}]}]]></busConfig>
+              <channelMap direction="input">
+                <channel index="0" sourceIndex="0"/>
+              </channelMap>
+              <channelMap direction="output">
+                <channel index="0" sourceIndex="0"/>
+              </channelMap>
+              <presetChunkData><![CDATA[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]]></presetChunkData>
+            </component>
+          </slot>
+          <slot powered="true" slotIndex="3">
+            <component componentGuid="fc454b1a-5a92-45c7-ac9a-1fe2b10bc7bd" componentID="8edcd326-33de-4a4d-985b-f1bf48ed1427" editorHeight="547" editorLeft="347" editorTop="163" editorWidth="746" name="Parametric Equalizer" presetName="(Custom)">
+              <busConfig><![CDATA[{"in":[{"layout":[0],"name":"","type":0}],"out":[{"layout":[0],"name":"","type":0}]}]]></busConfig>
+              <channelMap direction="input">
+                <channel index="0" sourceIndex="0"/>
+              </channelMap>
+              <channelMap direction="output">
+                <channel index="0" sourceIndex="0"/>
+              </channelMap>
+              <parameter index="0" name="Low Shelf Frequency" parameterValue="0.000907852430827915668487548828125"/>
+              <parameter index="1" name="Low Shelf Gain" parameterValue="0.5"/>
+              <parameter index="2" name="High Shelf Frequency" parameterValue="0.643441677093505859375"/>
+              <parameter index="3" name="High Shelf Gain" parameterValue="0.4020833075046539306640625"/>
+              <parameter index="4" name="EQ Band 1 Center Frequency" parameterValue="0.00308669987134635448455810546875"/>
+              <parameter index="5" name="EQ Band 1 Q" parameterValue="0.000169990002177655696868896484375"/>
+              <parameter index="6" name="EQ Band 1 Gain" parameterValue="0.544791638851165771484375"/>
+              <parameter index="7" name="EQ Band 1 Enable" parameterValue="1"/>
+              <parameter index="8" name="EQ Band 2 Center Frequency" parameterValue="0.006255541928112506866455078125"/>
+              <parameter index="9" name="EQ Band 2 Q" parameterValue="9.99900003080256283283233642578125e-05"/>
+              <parameter index="10" name="EQ Band 2 Gain" parameterValue="0.5479166507720947265625"/>
+              <parameter index="11" name="EQ Band 2 Enable" parameterValue="1"/>
+              <parameter index="12" name="EQ Band 3 Center Frequency" parameterValue="0.0354062616825103759765625"/>
+              <parameter index="13" name="EQ Band 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+              <parameter index="14" name="EQ Band 3 Gain" parameterValue="0.5166666507720947265625"/>
+              <parameter index="15" name="EQ Band 3 Enable" parameterValue="1"/>
+              <parameter index="16" name="EQ Band 4 Center Frequency" parameterValue="0.144349157810211181640625"/>
+              <parameter index="17" name="EQ Band 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+              <parameter index="18" name="EQ Band 4 Gain" parameterValue="0.5"/>
+              <parameter index="19" name="EQ Band 4 Enable" parameterValue="1"/>
+              <parameter index="20" name="EQ Band 5 Center Frequency" parameterValue="0.438084423542022705078125"/>
+              <parameter index="21" name="EQ Band 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+              <parameter index="22" name="EQ Band 5 Gain" parameterValue="0.4708333313465118408203125"/>
+              <parameter index="23" name="EQ Band 5 Enable" parameterValue="1"/>
+              <parameter index="24" name="Master Gain" parameterValue="0.66666698455810546875"/>
+              <parameter index="25" name="ConstantQ" parameterValue="1"/>
+              <parameter index="26" name="Low Shelf Filter Order" parameterValue="0"/>
+              <parameter index="27" name="High Shelf Filter Order" parameterValue="1"/>
+              <parameter index="28" name="Ultra-Quiet Mode" parameterValue="0"/>
+              <parameter index="29" name="Low Shelf Enable" parameterValue="1"/>
+              <parameter index="30" name="High Shelf Enable" parameterValue="1"/>
+              <parameter index="31" name="Original Sample Rate" parameterValue="0.22968749701976776123046875"/>
+              <parameter index="32" name="EQ Band 1 Bandwidth" parameterValue="0.0051764608360826969146728515625"/>
+              <parameter index="33" name="EQ Band 2 Bandwidth" parameterValue="0.015780948102474212646484375"/>
+              <parameter index="34" name="EQ Band 3 Bandwidth" parameterValue="0.0399999879300594329833984375"/>
+              <parameter index="35" name="EQ Band 4 Bandwidth" parameterValue="0.1600005924701690673828125"/>
+              <parameter index="36" name="EQ Band 5 Bandwidth" parameterValue="0.483550012111663818359375"/>
+              <parameter index="37" name="High-Pass Filter Enable" parameterValue="1"/>
+              <parameter index="38" name="High-Pass Cutoff Frequency" parameterValue="0.000907852430827915668487548828125"/>
+              <parameter index="39" name="High-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+              <parameter index="40" name="Low-Pass Filter Enable" parameterValue="1"/>
+              <parameter index="41" name="Low-Pass Cutoff Frequency" parameterValue="0.816160380840301513671875"/>
+              <parameter index="42" name="Low-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+              <parameter index="43" name="Bypass" parameterValue="0"/>
+              <parameter index="44" name="LowGraphRange" parameterValue="1"/>
+            </component>
+          </slot>
+          <slot powered="true" slotIndex="4">
+            <component componentGuid="21331ec4-2e64-4a62-8485-c27500bf7d6d" componentID="3981e750-c8ae-40a2-889f-41a01c7efa03" editorHeight="672" editorLeft="421" editorTop="100" editorWidth="599" name="Multiband Compressor" presetName="Broadcast">
+              <busConfig><![CDATA[{"in":[{"layout":[0],"name":"","type":0}],"out":[{"layout":[0],"name":"","type":0}]}]]></busConfig>
+              <channelMap direction="input">
+                <channel index="0" sourceIndex="0"/>
+              </channelMap>
+              <channelMap direction="output">
+                <channel index="0" sourceIndex="0"/>
+              </channelMap>
+              <presetChunkData><![CDATA[AiBuYWZldFNoAAAAAAAAAAAAIMHMzIzBZmbGwQAAyMEAAEBAAAAAQAAAAEAAAEBAAACAPwAAgD8AAIA/AACAPwAAyEIAAMhCAADIQgAAyEIAAIA/AAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJQwBgj0QA8NdFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEDBzczMvQAAAAAAAIBAAAD6QwAAgD8AAAAAAAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></presetChunkData>
+            </component>
+          </slot>
+        </effectsRack>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="619461" fileID="0" hue="-1" id="0" lockedInTime="false" looped="false" name="01_-_Introduction 44100 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="619461" startPoint="0" zOrder="5">
+          <component componentGuid="fcfceda5-afd2-48a6-ab2e-d25dce17a3af" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="8a6e6a05-bdc6-486c-85fd-22a6ece00804" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component id="clipPan" powered="true"/>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="0" startPoint="0" type="cosine"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="619461" shape="0" startPoint="619461" type="cosine"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="1845278" fileID="1" hue="-1" id="1" lockedInTime="false" looped="false" name="02_-_Lhistoire_du_Podcast 44100 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="1225817" startPoint="619461" zOrder="6">
+          <component componentGuid="d067bb28-7749-4a81-8a8f-d4a3bec33590" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="d73e48e1-a609-450d-ac53-7d070d0c4576" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component id="clipPan" powered="true"/>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="0" startPoint="0" type="cosine"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="1225817" shape="0" startPoint="1225817" type="cosine"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="3196979" fileID="2" hue="-1" id="2" lockedInTime="false" looped="false" name="03_-_Quelques_chiffres 44100 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="1351701" startPoint="1845278" zOrder="7">
+          <component componentGuid="a80115e6-9b3e-4613-bd75-c054ac8a00af" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="47edcfd7-7357-41c5-b73c-600514d76e5f" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component id="clipPan" powered="true"/>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="0" startPoint="0" type="cosine"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="1351701" shape="0" startPoint="1351701" type="cosine"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="3349769" fileID="2" hue="-1" id="3" lockedInTime="false" looped="false" name="03_-_Quelques_chiffres 44100 1" offline="false" select="false" sourceInPoint="1351701" sourceOutPoint="1486911" startPoint="3214559" zOrder="8">
+          <component componentGuid="8d5ad3a0-949d-423c-895a-9f6ac4d7bbac" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="7d35b3ed-6944-4976-a4d4-c21f2225bafc" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component id="clipPan" powered="true"/>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="0" startPoint="0" type="cosine"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="135210" shape="0" startPoint="135210" type="cosine"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="4327886" fileID="3" hue="-1" id="4" lockedInTime="false" looped="false" name="04_-_Creation 44100 1" offline="false" select="false" sourceInPoint="0" sourceOutPoint="976286" startPoint="3351600" zOrder="10">
+          <component componentGuid="c51929c3-e846-4b55-b07f-ca38c2b34abb" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="6d9b4737-3184-43fc-903c-a5801fd26838" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component id="clipPan" powered="true"/>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="0" startPoint="0" type="cosine"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="976286" shape="0" startPoint="976286" type="cosine"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="6" endPoint="5589548" fileID="4" hue="-1" id="5" lockedInTime="false" looped="false" name="05_-_La_diffusion 44100 2" offline="false" select="false" sourceInPoint="0" sourceOutPoint="1240252" startPoint="4349296" zOrder="13">
+          <component componentGuid="b2b460a8-f2e0-41b6-8106-2a04d4758f84" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="609cc625-69ce-46e8-bb20-6726c11fd0c5" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component id="clipPan" powered="true"/>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="0" startPoint="0" type="cosine"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="1240252" shape="18" startPoint="1239053" type="log"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="5" crossFadeTailClipID="-1" endPoint="6418983" fileID="5" hue="-1" id="6" lockedInTime="false" looped="false" name="06_-_La_cible 44100 2" offline="false" select="false" sourceInPoint="0" sourceOutPoint="830634" startPoint="5588349" zOrder="14">
+          <component componentGuid="72ed26bb-ae3b-49fd-8d77-6791f3d6d1e8" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="4d85febf-41b2-4099-bd30-012be906bef7" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component id="clipPan" powered="true"/>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="1199" shape="19" startPoint="0" type="log"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="830634" shape="0" startPoint="830634" type="cosine"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="7833838" fileID="6" hue="-1" id="7" lockedInTime="false" looped="false" name="07_-_Le_modele_economique 44100 2" offline="false" select="true" sourceInPoint="0" sourceOutPoint="1380793" startPoint="6453045" zOrder="20">
+          <component componentGuid="83762824-e70e-428d-a479-8af4c533d013" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="fe5af547-5fdf-409e-b50b-9d36a55de0b5" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component id="clipPan" powered="true"/>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="0" startPoint="0" type="cosine"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="1380793" shape="0" startPoint="1380793" type="cosine"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="10496236" fileID="7" hue="-1" id="8" lockedInTime="false" looped="false" name="08 - Les maison de productions 44100 1" offline="false" select="true" sourceInPoint="0" sourceOutPoint="2662398" startPoint="7833838" zOrder="16">
+          <component componentGuid="e5593f0a-bf84-4638-9163-7531810337a7" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="5897371b-a53b-41ea-8b21-ae3921b14290" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component id="clipPan" powered="true"/>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="0" startPoint="0" type="cosine"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="2662398" shape="0" startPoint="2662398" type="cosine"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="11918237" fileID="8" hue="-1" id="9" lockedInTime="false" looped="false" name="09_-_Lexemple_des_podcasts_independants 44100 1" offline="false" select="true" sourceInPoint="0" sourceOutPoint="1422001" startPoint="10496236" zOrder="17">
+          <component componentGuid="f4928735-34c5-4a00-9022-c590b98dfed5" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="90628014-3a43-4d6f-9ef3-eb70aaaf2498" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component id="clipPan" powered="true"/>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="0" startPoint="0" type="cosine"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="1422001" shape="0" startPoint="1422001" type="cosine"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="13559907" fileID="9" hue="-1" id="10" lockedInTime="false" looped="false" name="10_-_Lexemple_des_podcasts_produits 44100 1" offline="false" select="true" sourceInPoint="0" sourceOutPoint="1641670" startPoint="11918237" zOrder="18">
+          <component componentGuid="c7a9a69a-b5e1-4017-a926-8962f204256f" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="c9198721-17cc-4aa5-b74c-08bf26b89aac" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component id="clipPan" powered="true"/>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="0" startPoint="0" type="cosine"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="1641670" shape="0" startPoint="1641670" type="cosine"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+          </channelMap>
+        </audioClip>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="14851235" fileID="10" hue="-1" id="11" lockedInTime="false" looped="false" name="11_-_Avis_personnel_sur_le_media 44100 1" offline="false" select="true" sourceInPoint="0" sourceOutPoint="1291328" startPoint="13559907" zOrder="19">
+          <component componentGuid="34465994-8038-4ac7-8127-a19c04d430dc" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="5ca79080-e820-4b47-967b-3613c18b2b77" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component id="clipPan" powered="true"/>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="0" startPoint="0" type="cosine"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="1291328" shape="0" startPoint="1291328" type="cosine"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+          </channelMap>
+        </audioClip>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10002" index="2" select="false" visible="true">
+        <trackParameters trackHeight="108" trackHue="267" trackMinimized="false">
+          <name>Track 2</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="mono" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="a77bd88c-9bbf-4b95-bf79-56611bd2b8c7" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="0.099999971687793731689453125"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="90b6e931-b075-4e33-8c1e-958f9d909031" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="722fe2fe-a2e3-4011-a7c7-647dfa4e366d" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <component componentGuid="ba63b769-e068-44f7-99f4-8a1db49ad351" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Low Shelf Frequency" parameterValue="0.0009078529546968638896942138671875"/>
+            <parameter index="1" name="Low Shelf Gain" parameterValue="0.5"/>
+            <parameter index="2" name="High Shelf Frequency" parameterValue="0.816159784793853759765625"/>
+            <parameter index="3" name="High Shelf Gain" parameterValue="0.5"/>
+            <parameter index="4" name="EQ Band 1 Center Frequency" parameterValue="0.0013617794029414653778076171875"/>
+            <parameter index="5" name="EQ Band 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ Band 1 Gain" parameterValue="0.5"/>
+            <parameter index="7" name="EQ Band 1 Enable" parameterValue="1"/>
+            <parameter index="8" name="EQ Band 2 Center Frequency" parameterValue="0.008170676417648792266845703125"/>
+            <parameter index="9" name="EQ Band 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ Band 2 Gain" parameterValue="0.5"/>
+            <parameter index="11" name="EQ Band 2 Enable" parameterValue="1"/>
+            <parameter index="12" name="EQ Band 3 Center Frequency" parameterValue="0.0354062654078006744384765625"/>
+            <parameter index="13" name="EQ Band 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ Band 3 Gain" parameterValue="0.5"/>
+            <parameter index="15" name="EQ Band 3 Enable" parameterValue="1"/>
+            <parameter index="16" name="EQ Band 4 Center Frequency" parameterValue="0.144348621368408203125"/>
+            <parameter index="17" name="EQ Band 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ Band 4 Gain" parameterValue="0.5"/>
+            <parameter index="19" name="EQ Band 4 Enable" parameterValue="1"/>
+            <parameter index="20" name="EQ Band 5 Center Frequency" parameterValue="0.580118000507354736328125"/>
+            <parameter index="21" name="EQ Band 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ Band 5 Gain" parameterValue="0.5"/>
+            <parameter index="23" name="EQ Band 5 Enable" parameterValue="1"/>
+            <parameter index="24" name="Master Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Low Shelf Filter Order" parameterValue="0"/>
+            <parameter index="27" name="High Shelf Filter Order" parameterValue="0"/>
+            <parameter index="28" name="Ultra-Quiet Mode" parameterValue="0"/>
+            <parameter index="29" name="Low Shelf Enable" parameterValue="1"/>
+            <parameter index="30" name="High Shelf Enable" parameterValue="1"/>
+            <parameter index="31" name="Original Sample Rate" parameterValue="0.22968749701976776123046875"/>
+            <parameter index="32" name="EQ Band 1 Bandwidth" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ Band 2 Bandwidth" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ Band 3 Bandwidth" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ Band 4 Bandwidth" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ Band 5 Bandwidth" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="High-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="38" name="High-Pass Cutoff Frequency" parameterValue="0"/>
+            <parameter index="39" name="High-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Low-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="41" name="Low-Pass Cutoff Frequency" parameterValue="0.906945049762725830078125"/>
+            <parameter index="42" name="Low-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="LowGraphRange" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+        <audioClip clipAutoCrossfade="true" crossFadeHeadClipID="-1" crossFadeTailClipID="-1" endPoint="499121" fileID="11" hue="-1" id="0" lockedInTime="false" looped="false" name="mixkit-negative-tone-interface-tap-2569" offline="false" select="false" sourceInPoint="0" sourceOutPoint="55331" startPoint="443790" zOrder="4">
+          <component componentGuid="234fd37f-f4d2-4d95-82f9-f02b554a6cbd" componentID="Audition.Fader" id="clipGain" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="9515841a-9a82-4b25-9d2e-e43336733cce" componentID="Audition.Mute" id="clipMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component id="clipPan" powered="true"/>
+          <fadeIn crossFadeLinkType="linkedAsymmetric" endPoint="0" shape="0" startPoint="0" type="cosine"/>
+          <fadeOut crossFadeLinkType="linkedAsymmetric" endPoint="55331" shape="0" startPoint="55331" type="cosine"/>
+          <editParameter parameterIndex="0" slotIndex="4294967280"/>
+          <channelMap>
+            <channel index="0" sourceIndex="0"/>
+            <channel index="1" sourceIndex="1"/>
+          </channelMap>
+        </audioClip>
+      </audioTrack>
+      <masterTrack automationLaneOpenState="false" id="10000" index="3" select="false" visible="true">
+        <trackParameters trackHeight="108" trackHue="-1" trackMinimized="false">
+          <name>Master</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="mono" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="true">
+          <trackOutput outputID="1" type="hardwareOutput"/>
+          <trackInput inputID="-1"/>
+          <component componentGuid="86d0ca20-535d-45fa-a2f8-c2246c7ff7aa" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="b434c95e-1cc5-4d4a-9b14-20d586c6976b" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="79a1c479-ae54-445c-a79d-b066462c70a0" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <component componentGuid="d08ea34e-48d6-4e07-aabf-cff8ed1bde5b" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Low Shelf Frequency" parameterValue="0.0009078529546968638896942138671875"/>
+            <parameter index="1" name="Low Shelf Gain" parameterValue="0.5"/>
+            <parameter index="2" name="High Shelf Frequency" parameterValue="0.816159784793853759765625"/>
+            <parameter index="3" name="High Shelf Gain" parameterValue="0.5"/>
+            <parameter index="4" name="EQ Band 1 Center Frequency" parameterValue="0.0013617794029414653778076171875"/>
+            <parameter index="5" name="EQ Band 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ Band 1 Gain" parameterValue="0.5"/>
+            <parameter index="7" name="EQ Band 1 Enable" parameterValue="1"/>
+            <parameter index="8" name="EQ Band 2 Center Frequency" parameterValue="0.008170676417648792266845703125"/>
+            <parameter index="9" name="EQ Band 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ Band 2 Gain" parameterValue="0.5"/>
+            <parameter index="11" name="EQ Band 2 Enable" parameterValue="1"/>
+            <parameter index="12" name="EQ Band 3 Center Frequency" parameterValue="0.0354062654078006744384765625"/>
+            <parameter index="13" name="EQ Band 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ Band 3 Gain" parameterValue="0.5"/>
+            <parameter index="15" name="EQ Band 3 Enable" parameterValue="1"/>
+            <parameter index="16" name="EQ Band 4 Center Frequency" parameterValue="0.144348621368408203125"/>
+            <parameter index="17" name="EQ Band 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ Band 4 Gain" parameterValue="0.5"/>
+            <parameter index="19" name="EQ Band 4 Enable" parameterValue="1"/>
+            <parameter index="20" name="EQ Band 5 Center Frequency" parameterValue="0.580118000507354736328125"/>
+            <parameter index="21" name="EQ Band 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ Band 5 Gain" parameterValue="0.5"/>
+            <parameter index="23" name="EQ Band 5 Enable" parameterValue="1"/>
+            <parameter index="24" name="Master Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Low Shelf Filter Order" parameterValue="0"/>
+            <parameter index="27" name="High Shelf Filter Order" parameterValue="0"/>
+            <parameter index="28" name="Ultra-Quiet Mode" parameterValue="0"/>
+            <parameter index="29" name="Low Shelf Enable" parameterValue="1"/>
+            <parameter index="30" name="High Shelf Enable" parameterValue="1"/>
+            <parameter index="31" name="Original Sample Rate" parameterValue="0.22968749701976776123046875"/>
+            <parameter index="32" name="EQ Band 1 Bandwidth" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ Band 2 Bandwidth" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ Band 3 Bandwidth" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ Band 4 Bandwidth" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ Band 5 Bandwidth" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="High-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="38" name="High-Pass Cutoff Frequency" parameterValue="0"/>
+            <parameter index="39" name="High-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Low-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="41" name="Low-Pass Cutoff Frequency" parameterValue="0.906945049762725830078125"/>
+            <parameter index="42" name="Low-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="LowGraphRange" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </masterTrack>
+    </tracks>
+    <sessionState ctiPosition="6430234" smpteStart="0">
+      <selectionState selectionDuration="0" selectionStart="6430234"/>
+      <viewState horizontalViewDuration="1532806" horizontalViewStart="6089717" trackControlsWidth="224" verticalScrollOffset="0"/>
+      <timeFormatState beatsPerBar="4" beatsPerMinute="120" customFrameRate="12" linkToDefaultTimeSettings="true" noteLength="4" subdivisions="16" timeCodeDropFrame="false" timeCodeFrameRate="30" timeCodeNTSC="false" timeFormat="timeFormatDecimal"/>
+      <mixingOptionState defaultPanModeLogarithmic="false" panPower="-3" playOverlappingClips="false"/>
+    </sessionState>
+    <xmpMetadata><![CDATA[<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 6.0-c002 79.164360, 2020/02/13-01:07:22        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+            xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+            xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:xmpDM="http://ns.adobe.com/xmp/1.0/DynamicMedia/">
+         <xmp:CreatorTool>Adobe Audition 13.0 (Macintosh)</xmp:CreatorTool>
+         <xmp:CreateDate>2020-11-23T17:06:32+01:00</xmp:CreateDate>
+         <xmp:MetadataDate>2020-11-26T17:10:09+01:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2020-11-26T17:10:09+01:00</xmp:ModifyDate>
+         <xmpMM:InstanceID>xmp.iid:a9445998-71ae-42ff-aaa1-168a98bc6f34</xmpMM:InstanceID>
+         <xmpMM:DocumentID>xmp.did:a9445998-71ae-42ff-aaa1-168a98bc6f34</xmpMM:DocumentID>
+         <xmpMM:OriginalDocumentID>xmp.did:61f7a97e-b8df-415d-b0ed-53ece8381662</xmpMM:OriginalDocumentID>
+         <xmpMM:History>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:61f7a97e-b8df-415d-b0ed-53ece8381662</stEvt:instanceID>
+                  <stEvt:when>2020-11-23T17:06:32+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:c354882b-878f-4d47-82ad-4b5702b7e056</stEvt:instanceID>
+                  <stEvt:when>2020-11-23T18:07:06+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:61ff35f3-71e8-4717-964e-aec680c98123</stEvt:instanceID>
+                  <stEvt:when>2020-11-23T18:07:06+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:3e4961e4-c051-4134-b66a-107689c04add</stEvt:instanceID>
+                  <stEvt:when>2020-11-23T18:07:09+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:d83b12a9-b448-475d-ba34-1a36ad230d5a</stEvt:instanceID>
+                  <stEvt:when>2020-11-23T18:07:09+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:8a43dd9e-ed34-4c5c-88c4-57e5be049c5d</stEvt:instanceID>
+                  <stEvt:when>2020-11-23T19:27:43+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:1900a515-3725-4e2b-8b01-66ff92cae0e6</stEvt:instanceID>
+                  <stEvt:when>2020-11-23T19:27:43+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:4f59e0a5-94a6-4c27-aca4-eda397ed51fc</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:43:02+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:02511957-3ae2-4288-b141-7550ed0e2b4b</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:43:02+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:cbb5c70d-7cca-4044-aec4-5f719eb06b6f</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:44:37+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:6ddc6b38-4587-468c-b111-212dfec23e4e</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:44:37+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:4d2fb15d-4753-42a1-8e0b-81c36dc9c42b</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:46:58+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:59862802-5395-415c-9263-7c665d6d2481</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:46:58+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:8da52fd7-54d5-4ff3-a4f4-af2763b4bcc7</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:47:07+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:b93afed4-4d94-4b5c-ba09-021ae67ffb63</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:47:07+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:30eae057-521e-41bc-88c5-c06cd2a85110</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:50:50+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:84651de1-30d9-4edf-8a37-52459923821a</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:50:50+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:6f9a7310-c561-4a69-b590-894937998493</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:52:06+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:95d9f7c7-3491-45a5-8b07-cec3dc42c1da</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:52:06+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:c3e648b2-c81d-4187-a56b-a17ababb2c31</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:54:26+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:d594c959-1cf3-4edf-9263-b463fe274e66</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:54:26+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:9340def8-9085-44c7-8aa8-ee15432c4ae7</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:54:52+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:b4cc6575-dbaf-422e-a002-281087e2d052</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:54:52+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:5633738e-3c4c-4898-a011-2a8040a4cd22</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:54:56+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:306daef6-a338-41aa-9947-725b8385bb12</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:54:56+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:40861b33-7df0-408f-bde9-bec37c227538</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:57:04+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:dceff707-b206-481b-ba5d-6f2f3eb84eac</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:57:04+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:363783fa-50bc-4b88-992c-51bed61b762f</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:58:22+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:2eafe56b-7d27-4e5a-afef-4f1eccb1a541</stEvt:instanceID>
+                  <stEvt:when>2020-11-24T16:58:22+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:fd481fd7-2bfd-49b0-97f0-e0a1b732b7e5</stEvt:instanceID>
+                  <stEvt:when>2020-11-25T16:56:51+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:d441e9e5-7317-47a0-965a-74c3e4909fc8</stEvt:instanceID>
+                  <stEvt:when>2020-11-25T16:56:51+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:a4eee2b6-c6c5-43b8-a9c9-a67037e0b088</stEvt:instanceID>
+                  <stEvt:when>2020-11-25T16:59:14+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:e8a278a7-eb00-482a-ba08-11479ddf5d33</stEvt:instanceID>
+                  <stEvt:when>2020-11-25T16:59:14+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:0afd6d7e-f344-41c2-aec1-36a861f61b95</stEvt:instanceID>
+                  <stEvt:when>2020-11-25T16:59:53+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:fea3145f-44be-43b0-9c76-248efd01e885</stEvt:instanceID>
+                  <stEvt:when>2020-11-25T16:59:53+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:b7afcc6e-cbf6-41eb-b248-917a80c0051f</stEvt:instanceID>
+                  <stEvt:when>2020-11-26T17:10:09+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:a9445998-71ae-42ff-aaa1-168a98bc6f34</stEvt:instanceID>
+                  <stEvt:when>2020-11-26T17:10:09+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 13.0 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+            </rdf:Seq>
+         </xmpMM:History>
+         <xmpMM:DerivedFrom rdf:parseType="Resource">
+            <stRef:instanceID>xmp.iid:b7afcc6e-cbf6-41eb-b248-917a80c0051f</stRef:instanceID>
+            <stRef:documentID>xmp.did:61f7a97e-b8df-415d-b0ed-53ece8381662</stRef:documentID>
+            <stRef:originalDocumentID>xmp.did:61f7a97e-b8df-415d-b0ed-53ece8381662</stRef:originalDocumentID>
+         </xmpMM:DerivedFrom>
+         <dc:format>application/xml</dc:format>
+         <xmpDM:Tracks>
+            <rdf:Bag>
+               <rdf:li rdf:parseType="Resource">
+                  <xmpDM:trackName>CuePoint Markers</xmpDM:trackName>
+                  <xmpDM:trackType>Cue</xmpDM:trackType>
+                  <xmpDM:frameRate>f44100</xmpDM:frameRate>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <xmpDM:trackName>CD Track Markers</xmpDM:trackName>
+                  <xmpDM:trackType>Track</xmpDM:trackType>
+                  <xmpDM:frameRate>f44100</xmpDM:frameRate>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <xmpDM:trackName>Subclip Markers</xmpDM:trackName>
+                  <xmpDM:trackType>InOut</xmpDM:trackType>
+                  <xmpDM:frameRate>f44100</xmpDM:frameRate>
+               </rdf:li>
+            </rdf:Bag>
+         </xmpDM:Tracks>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>]]></xmpMetadata>
+    <clipGroups/>
+    <metronome enabled="false" pattern="downBeat subdivision subdivision subdivision " soundSet="sticks">
+      <metronomeTrack automationLaneOpenState="false" id="40000" index="0" select="false" visible="false">
+        <trackParameters trackHeight="77" trackHue="-1" trackMinimized="false">
+          <name>Metronome</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="mono" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="true">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="-1"/>
+          <component componentGuid="afdadafa-1ecb-4dd0-a848-557259ea2ec3" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="0.501187264919281005859375"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="c6abda23-fe3e-4db6-8007-9562f41f830c" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="637afad6-591b-4358-9c7a-b4caf1d4ae88" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Pan" parameterValue="0"/>
+          </component>
+          <component componentGuid="06434757-cb0e-4765-8ae7-9e2c5bae3200" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Low Shelf Frequency" parameterValue="0.0009078529546968638896942138671875"/>
+            <parameter index="1" name="Low Shelf Gain" parameterValue="0.5"/>
+            <parameter index="2" name="High Shelf Frequency" parameterValue="0.816159784793853759765625"/>
+            <parameter index="3" name="High Shelf Gain" parameterValue="0.5"/>
+            <parameter index="4" name="EQ Band 1 Center Frequency" parameterValue="0.0013617794029414653778076171875"/>
+            <parameter index="5" name="EQ Band 1 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="EQ Band 1 Gain" parameterValue="0.5"/>
+            <parameter index="7" name="EQ Band 1 Enable" parameterValue="1"/>
+            <parameter index="8" name="EQ Band 2 Center Frequency" parameterValue="0.008170676417648792266845703125"/>
+            <parameter index="9" name="EQ Band 2 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="EQ Band 2 Gain" parameterValue="0.5"/>
+            <parameter index="11" name="EQ Band 2 Enable" parameterValue="1"/>
+            <parameter index="12" name="EQ Band 3 Center Frequency" parameterValue="0.0354062654078006744384765625"/>
+            <parameter index="13" name="EQ Band 3 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="EQ Band 3 Gain" parameterValue="0.5"/>
+            <parameter index="15" name="EQ Band 3 Enable" parameterValue="1"/>
+            <parameter index="16" name="EQ Band 4 Center Frequency" parameterValue="0.144348621368408203125"/>
+            <parameter index="17" name="EQ Band 4 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="EQ Band 4 Gain" parameterValue="0.5"/>
+            <parameter index="19" name="EQ Band 4 Enable" parameterValue="1"/>
+            <parameter index="20" name="EQ Band 5 Center Frequency" parameterValue="0.580118000507354736328125"/>
+            <parameter index="21" name="EQ Band 5 Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="EQ Band 5 Gain" parameterValue="0.5"/>
+            <parameter index="23" name="EQ Band 5 Enable" parameterValue="1"/>
+            <parameter index="24" name="Master Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="ConstantQ" parameterValue="1"/>
+            <parameter index="26" name="Low Shelf Filter Order" parameterValue="0"/>
+            <parameter index="27" name="High Shelf Filter Order" parameterValue="0"/>
+            <parameter index="28" name="Ultra-Quiet Mode" parameterValue="0"/>
+            <parameter index="29" name="Low Shelf Enable" parameterValue="1"/>
+            <parameter index="30" name="High Shelf Enable" parameterValue="1"/>
+            <parameter index="31" name="Original Sample Rate" parameterValue="0.22968749701976776123046875"/>
+            <parameter index="32" name="EQ Band 1 Bandwidth" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="EQ Band 2 Bandwidth" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="EQ Band 3 Bandwidth" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="EQ Band 4 Bandwidth" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="EQ Band 5 Bandwidth" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="High-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="38" name="High-Pass Cutoff Frequency" parameterValue="0"/>
+            <parameter index="39" name="High-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Low-Pass Filter Enable" parameterValue="0"/>
+            <parameter index="41" name="Low-Pass Cutoff Frequency" parameterValue="0.906945049762725830078125"/>
+            <parameter index="42" name="Low-Pass Slope" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Bypass" parameterValue="0"/>
+            <parameter index="44" name="LowGraphRange" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </metronomeTrack>
+    </metronome>
+    <properties>
+      <property key="EssentialSoundConfigurations">[{"Guid":"a8b40e3e-13e7-4c1f-b382-96058f1f691d","Name":"$$$/app/Presets/DefaultPresetName=(Default)","PresetData":{"ModeID":"ambience","Models":{"model_ducking":{},"model_loudness":{"DefaultLoudness":{"type":"float","value":-30},"LoudnessStandard":{"type":"std::uint32_t","value":0},"MaxLoudness":{"type":"float","value":-12},"MinLoudness":{"type":"float","value":-42}},"model_soundeffects":{"ReverbPresets":{"type":"tree::any","value":{"$$$/app/Presets/EssentialSound/ReverbPreset/LargeRoomAmbience=Large Room Ambience":{"type":"array::float","value":[0.051507499068975449,0.32432401180267334,0.29292899370193481,0.30000001192092896,0.20000000298023224,0,0.14285700023174286,0.40000000596046448,0.5,0.69999998807907104,0.30000001192092896,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/OutsideAmbience=Outside Ambience":{"type":"array::float","value":[0.091708503663539886,0.043893899768590927,1,0.5,0.20000000298023224,0.80000001192092896,0.18367299437522888,1,0.5,0,0.80000001192092896,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/RoomAmbience=Room Ambience":{"type":"array::float","value":[0.057788901031017303,0.44944900274276733,0.49494898319244385,0.89999997615814209,0.10000000149011612,0.15000000596046448,0.081632703542709351,0.40000000596046448,0.5,0.80000001192092896,0.20000000298023224,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/WindEffect=Wind Effect":{"type":"array::float","value":[0.19597999751567841,0.6896899938583374,0.69696998596191406,0.25,0.5,0.5,0.23469400405883789,0.51999998092651367,0.5,0.75,0.25,0.25125628709793091,0.03125]}}}},"model_stereowidth":{},"model_volume":{"MaxGain":{"type":"float","value":15},"MinGain":{"type":"float","value":-60}}},"Version":1},"Type":"1c19ca71-c24c-49cd-8dd5-2cc46018507a","Version":1},{"Guid":"58dc27a8-6a2a-480c-bd0c-4b45fff346a6","Name":"$$$/app/Presets/DefaultPresetName=(Default)","PresetData":{"ModeID":"dialog","Models":{"model_clarity":{"EQPresets":{"type":"tree::any","value":{"$$$/app/Presets/EssentialSound/EQPreset/BackgroundVoice=Background Voice":{"type":"array::float","value":[0.12099699676036835,0.5,0.39240506291389465,0,0.5,0.5,0.5,0.5,0.5,0.47827938199043274,0.45772689580917358,0.45778733491897583,0.47946760058403015,0.5,0]},"$$$/app/Presets/EssentialSound/EQPreset/Intercom=Intercom":{"type":"array::float","value":[0.19432899355888367,0.5,1,0,0.071499988436698914,0.071499988436698914,0.071499988436698914,0.40238627791404724,0.48571401834487915,0.5,0.55155748128890991,0.59602576494216919,0.22246670722961426,0.071499988436698914,0]},"$$$/app/Presets/EssentialSound/EQPreset/LockedInTheTrunk=Locked in the Trunk":{"type":"array::float","value":[0.12099699676036835,0.5,0.79746836423873901,0,0.5,0.5,0.5,0.5,0.5,0.32846158742904663,0.15721426904201508,0.15721426904201508,0.15721426904201508,0.15721426904201508,0]},"$$$/app/Presets/EssentialSound/EQPreset/OldRadio=Old Radio":{"type":"array::float","value":[0.12099699676036835,0.5,0.79746836423873901,0,0.15721426904201508,0.15721426904201508,0.15721426904201508,0.28442040085792542,0.48315632343292236,0.36498492956161499,0.52853888273239136,0.43511500954627991,0.27154684066772461,0.15721426904201508,0]},"$$$/app/Presets/EssentialSound/EQPreset/OnTheTelephone=On the Telephone":{"type":"array::float","value":[0.12099699676036835,0.5,0.39240506291389465,0,0.32864287495613098,0.32864287495613098,0.32864287495613098,0.32864287495613098,0.48571401834487915,0.53071397542953491,0.53071397542953491,0.48357096314430237,0.32864287495613098,0.32864287495613098,0]},"$$$/app/Presets/EssentialSound/EQPreset/OutsideOfTheRoom=Outside of the Room":{"type":"array::float","value":[0.12099699676036835,0.5,0.79746836423873901,0,0.42539370059967041,0.47865453362464905,0.5,0.5,0.48571401834487915,0.40073278546333313,0.25656309723854065,0.15721426904201508,0.15721426904201508,0.15721426904201508,0]},"$$$/app/Presets/EssentialSound/EQPreset/PodcastVoice=Podcast Voice":{"type":"array::float","value":[0.12099699676036835,0.5,0.39240506291389465,0,0.5,0.5,0.5,0.51789408922195435,0.50770342350006104,0.5,0.51789408922195435,0.528114914894104,0.5102812647819519,0.5,0]},"$$$/app/Presets/EssentialSound/EQPreset/SubtleBoostFemale=Subtle Boost (Female)":{"type":"array::float","value":[0.096553400158882141,0.5,0.29113924503326416,0,0.5,0.5,0.5,0.5,0.5,0.51933407783508301,0.54642897844314575,0.52706766128540039,0.5,0.5,0]},"$$$/app/Presets/EssentialSound/EQPreset/SubtleBoostMale=Subtle Boost (Male)":{"type":"array::float","value":[0.096553400158882141,0.5,0.29113924503326416,0,0.5,0.5,0.5,0.5,0.5,0.5135338306427002,0.54642897844314575,0.51933407783508301,0.5,0.5,0]},"$$$/app/Presets/EssentialSound/EQPreset/ThatPublicRadioSound=That Public Radio Sound":{"type":"array::float","value":[0.12099699676036835,0.5,0.79746836423873901,0,0.15721426904201508,0.15721426904201508,0.15721426904201508,0.36334344744682312,0.49468311667442322,0.5,0.5,0.5,0.5,0.5,0]},"$$$/app/Presets/EssentialSound/EQPreset/VocalPresence=Vocal Presence":{"type":"array::float","value":[0.096553400158882141,0.5,0.32489451766014099,0,0.3572143018245697,0.3572143018245697,0.46428570151329041,0.47857141494750977,0.4763694703578949,0.49570354819297791,0.55924957990646362,0.56523394584655762,0.50859290361404419,0.46992480754852295,0]}}}},"model_loudness":{"DefaultLoudness":{"type":"float","value":-23},"LoudnessStandard":{"type":"std::uint32_t","value":0},"MaxLoudness":{"type":"float","value":-12},"MinLoudness":{"type":"float","value":-42}},"model_restoration":{"ReduceNoiseMaxSetting":{"type":"array::float","value":[1,0,0,0,0]},"ReduceNoiseMinSetting":{"type":"array::float","value":[0,0,0,0,0]},"ReduceReverbMaxSetting":{"type":"array::float","value":[1,0,1,0,0]},"ReduceReverbMinSetting":{"type":"array::float","value":[0,0,1,0,0]},"ReduceRumbleMaxSetting":{"type":"array::float","value":[1,0.061583578586578369,0.375,0,0,0.00083333335351198912,1,0,1,0.0390625,0.00083408987848088145,0,0.0041666668839752674,0.00022554649331141263,0.0046875001862645149,0.75,0.0052083334885537624,0.75,1,0.75,0.0040520834736526012,0.75,0.0042629167437553406,0.00022554649331141263,0.0064883334562182426,0.00022554649331141263,0.006866666954010725,0.75,0.0071704164147377014,0.00022554649331141263,0.01041458360850811,0.00022554649331141263,0.010900000110268593,0.75,0.011407917365431786,0.00022554649331141263,0.015606249682605267,0.00022554649331141263,0.016333334147930145,0.75,0.017094582319259644,0.00022554649331141263,0.026243748143315315,0.00022554649331141263,0.0274666678160429,0.75,0.028746666386723518,0.00022554649331141263,0.041658751666545868,0.00022554649331141263,0.043600000441074371,0.75,0.045631669461727142,0.00022554649331141263,0.062424581497907639,0.00022554649331141263,0.065333336591720581,0.75,0.068377502262592316,0.00022554649331141263,0.10497540980577469,0.00022554649331141263,0.1098666712641716,0.75,0.11498583108186722,0.00022554649331141263,0.16663584113121033,0.00022554649331141263,0.17440000176429749,0.75,0.18252624571323395,0.00022554649331141263,0.91874998807907104,0.00022554649331141263,1,0.00022554649331141263,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"ReduceRumbleMinSetting":{"type":"array::float","value":[1,0.061583578586578369,0.375,0,0,0.00083333335351198912,1,0,1,0.0390625,0.00083408987848088145,0.75,0.0041666668839752674,0.75,0.0046875001862645149,0.75,0.0052083334885537624,0.75,1,0.75,0.91874998807907104,0.61237245798110962,1,0.61237245798110962,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},"ReduceSibilanceMaxSetting":{"type":"array::float","value":[0.5,0.19983997941017151,0.18367347121238708,0.26086956262588501,0.52702701091766357,0,1,0,0,0,0,0.75,1,1,0.40000000596046448]},"ReduceSibilanceMinSetting":{"type":"array::float","value":[0.875,0.19983997941017151,0.18367347121238708,0.19130434095859528,0.25675675272941589,0,1,0,0,0,0,0.75,1,1,0.40000000596046448]}},"model_soundeffects":{"ReverbPresets":{"type":"tree::any","value":{"$$$/app/Presets/EssentialSound/ReverbPreset/Auditorium=Auditorium":{"type":"array::float","value":[0.013047545216977596,0.15895412862300873,1,0.89999997615814209,0,0.52007436752319336,0.41663265228271484,0.46000000834465027,0.5,0.73000001907348633,0.15999999642372131,0.75376886129379272,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/Church=Church":{"type":"array::float","value":[0.032663315534591675,0.39939939975738525,0.79797977209091187,0.25,0.5,0.5,0.2297959178686142,0.72000002861022949,0.5,0.62999999523162842,0.87999999523162842,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/LargeReflectiveRoom=Large Reflective Room":{"type":"array::float","value":[0.0074449013918638229,0.098988421261310577,0.79890537261962891,0.89999997615814209,0.10000000149011612,0.40110713243484497,0.060284845530986786,0.27522978186607361,0.5,0.73000001907348633,0.31999999284744263,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/OutsideTheClub=Outside the Club":{"type":"array::float","value":[0.020615793764591217,0.050136558711528778,0.69696998596191406,0.25,0.094355784356594086,0.22242647409439087,0.1071428582072258,0.2800000011920929,0.5,0.73000001907348633,0.46000000834465027,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/SmallDryRoom=Small Dry Room":{"type":"array::float","value":[0.24623115360736847,0.69975000619888306,0.29292899370193481,0.40000000596046448,0.20000000298023224,0.40000000596046448,0.039285715669393539,0.10000000149011612,0.5,1,0.5,0.75376886129379272,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/ThickenVoice=Thicken Voice":{"type":"array::float","value":[0.19597999751567841,0.23931467533111572,0.69696998596191406,0.25,0.5,0.53999996185302734,0.020408162847161293,0.20945435762405396,0.5,1,0.34999999403953552,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/WarmRoom=Warm Room":{"type":"array::float","value":[0.020100502297282219,0.074074074625968933,0.49494948983192444,0.40000000596046448,0.74960309267044067,0.40000000596046448,0.1239795908331871,0.67000001668930054,0.5,0.85000002384185791,0.56000000238418579,0.25125628709793091,0.03125]},"$$$/app/Presets/EssentialSound/ReverbPreset/WarmVoice=Warm Voice":{"type":"array::float","value":[0.19597989320755005,0.89989989995956421,0,0.40000000596046448,0.20000000298023224,0.40000000596046448,0.10204081982374191,0.090000003576278687,0.5,1,0.30000001192092896,0.25125628709793091,0.03125]}}}},"model_volume":{"MaxGain":{"type":"float","value":15},"MinGain":{"type":"float","value":-60}}},"Version":2},"Type":"1c19ca71-c24c-49cd-8dd5-2cc46018507a","Version":1},{"Guid":"353811fa-4179-435e-8e5e-23028ba15a7a","Name":"$$$/app/Presets/DefaultPresetName=(Default)","PresetData":{"ModeID":"generic","Models":{"model_loudness":{"DefaultLoudness":{"type":"float","value":-24},"LoudnessStandard":{"type":"std::uint32_t","value":0},"MaxLoudness":{"type":"float","value":-12},"MinLoudness":{"type":"float","value":-42}},"model_volume":{"MaxGain":{"type":"float","value":15},"MinGain":{"type":"float","value":-60}}},"Version":1},"Type":"1c19ca71-c24c-49cd-8dd5-2cc46018507a","Version":1},{"Guid":"31ba96a6-5d3e-4d89-b1e1-1dbe3c055d0c","Name":"$$$/app/Presets/DefaultPresetName=(Default)","PresetData":{"ModeID":"music","Models":{"model_ducking":{},"model_duration":{},"model_loudness":{"DefaultLoudness":{"type":"float","value":-25},"LoudnessStandard":{"type":"std::uint32_t","value":0},"MaxLoudness":{"type":"float","value":-12},"MinLoudness":{"type":"float","value":-42}},"model_volume":{"MaxGain":{"type":"float","value":15},"MinGain":{"type":"float","value":-60}}},"Version":1},"Type":"1c19ca71-c24c-49cd-8dd5-2cc46018507a","Version":1},{"Guid":"cea63332-1adc-44a9-a6eb-5490f965859b","Name":"$$$/app/Presets/DefaultPresetName=(Default)","PresetData":{"ModeID":"sfx","Models":{"model_loudness":{"DefaultLoudness":{"type":"float","value":-21},"LoudnessStandard":{"type":"std::uint32_t","value":0},"MaxLoudness":{"type":"float","value":-12},"MinLoudness":{"type":"float","value":-42}},"model_pan":{},"model_soundeffects":{"ReverbPresets":{"type":"tree::any","value":{"$$$/app/Presets/EssentialSound/ReverbPreset/HeavyReverb=Heavy Reverb":{"type":"array::float","value":[0.13316600024700165,0.29929900169372559,1,0.95999997854232788,0.85000002384185791,0.5,0.51530599594116211,0.30000001192092896,0.5,0.5,0.5,0.25125628709793091,0.0625]},"$$$/app/Presets/EssentialSound/ReverbPreset/LightReverb=Light Reverb":{"type":"array::float","value":[0.095477402210235596,0.29929900169372559,0.090909101068973541,1,1,0.80000001192092896,0.22449000179767609,0.60000002384185791,0.5,0.69999998807907104,0.30000001192092896,0.25125628709793091,0.0625]},"$$$/app/Presets/EssentialSound/ReverbPreset/OutsideReverb=Outside Reverb":{"type":"array::float","value":[0.091708503663539886,0.043893899768590927,1,0.5,0.20000000298023224,0.80000001192092896,0.18367299437522888,1,0.5,0,0.80000001192092896,0.25125628709793091,0.0625]},"$$$/app/Presets/EssentialSound/ReverbPreset/RoomReverb=Room Reverb":{"type":"array::float","value":[0.057788901031017303,0.44944900274276733,0.49494898319244385,0.89999997615814209,0.10000000149011612,0.15000000596046448,0.081632703542709351,0.40000000596046448,0.5,0.80000001192092896,0.20000000298023224,0.25125628709793091,0.0625]}}}},"model_volume":{"MaxGain":{"type":"float","value":15},"MinGain":{"type":"float","value":-60}}},"Version":1},"Type":"1c19ca71-c24c-49cd-8dd5-2cc46018507a","Version":1}]</property>
+    </properties>
+  </session>
+
+  <files>
+    <file absolutePath="/Users/nathanbilleau/dev/podcast/voiceover/voice/Conformed Files/01_-_Introduction 44100 1.wav" id="0" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:20;" mediaHandler="AmioWav" recoveryID="db111eb5-8b73-4a35-b6ff-058728d2ff3c" relativePath="../Conformed Files/01_-_Introduction 44100 1.wav"/>
+    <file absolutePath="/Users/nathanbilleau/dev/podcast/voiceover/voice/Conformed Files/02_-_Lhistoire_du_Podcast 44100 1.wav" id="1" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:20;" mediaHandler="AmioWav" recoveryID="89caa591-8b3b-4928-b786-86e12772f1de" relativePath="../Conformed Files/02_-_Lhistoire_du_Podcast 44100 1.wav"/>
+    <file absolutePath="/Users/nathanbilleau/dev/podcast/voiceover/voice/Conformed Files/03_-_Quelques_chiffres 44100 1.wav" id="2" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:20;" mediaHandler="AmioWav" recoveryID="da265322-5f90-49c5-8f24-e55047a308fe" relativePath="../Conformed Files/03_-_Quelques_chiffres 44100 1.wav"/>
+    <file absolutePath="/Users/nathanbilleau/dev/podcast/voiceover/voice/Conformed Files/04_-_Creation 44100 1.wav" id="3" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:20;" mediaHandler="AmioWav" recoveryID="923111c9-33b5-4ca4-b3b0-e7f9157f1742" relativePath="../Conformed Files/04_-_Creation 44100 1.wav"/>
+    <file absolutePath="/Users/nathanbilleau/dev/podcast/voiceover/voice/Conformed Files/05_-_La_diffusion 44100 2.wav" id="4" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:20;" mediaHandler="AmioWav" recoveryID="f720041f-79e3-4c23-80d1-f9c933dce4b8" relativePath="../Conformed Files/05_-_La_diffusion 44100 2.wav"/>
+    <file absolutePath="/Users/nathanbilleau/dev/podcast/voiceover/voice/Conformed Files/06_-_La_cible 44100 2.wav" id="5" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:20;" mediaHandler="AmioWav" recoveryID="a309a51b-2d07-4f06-a83a-8129e260daef" relativePath="../Conformed Files/06_-_La_cible 44100 2.wav"/>
+    <file absolutePath="/Users/nathanbilleau/dev/podcast/voiceover/voice/Conformed Files/07_-_Le_modele_economique 44100 2.wav" id="6" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:20;" mediaHandler="AmioWav" recoveryID="2aca6643-7e86-4179-aa9d-59f35ce215d5" relativePath="../Conformed Files/07_-_Le_modele_economique 44100 2.wav"/>
+    <file absolutePath="/Users/nathanbilleau/dev/podcast/voiceover/voice/Conformed Files/08 - Les maison de productions 44100 1.wav" id="7" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:20;" mediaHandler="AmioWav" recoveryID="78540aec-645d-46ff-ae56-b5b6a18979df" relativePath="../Conformed Files/08 - Les maison de productions 44100 1.wav"/>
+    <file absolutePath="/Users/nathanbilleau/dev/podcast/voiceover/voice/Conformed Files/09_-_Lexemple_des_podcasts_independants 44100 1.wav" id="8" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:20;" mediaHandler="AmioWav" recoveryID="4c5a9a3b-7089-4b96-b1a3-052161c02e43" relativePath="../Conformed Files/09_-_Lexemple_des_podcasts_independants 44100 1.wav"/>
+    <file absolutePath="/Users/nathanbilleau/dev/podcast/voiceover/voice/Conformed Files/10_-_Lexemple_des_podcasts_produits 44100 1.wav" id="9" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:20;" mediaHandler="AmioWav" recoveryID="df826838-70cd-4895-ac17-f22555f4e600" relativePath="../Conformed Files/10_-_Lexemple_des_podcasts_produits 44100 1.wav"/>
+    <file absolutePath="/Users/nathanbilleau/dev/podcast/voiceover/voice/Conformed Files/11_-_Avis_personnel_sur_le_media 44100 1.wav" id="10" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:20;" mediaHandler="AmioWav" recoveryID="91ddf448-b89e-4f0a-a8ef-fcc1234eb14e" relativePath="../Conformed Files/11_-_Avis_personnel_sur_le_media 44100 1.wav"/>
+    <file absolutePath="/Users/nathanbilleau/dev/podcast/voiceover/voice/Imported Files/mixkit-negative-tone-interface-tap-2569.wav" id="11" importerPrivateSettings="Compression:0:0;LargeFileSupport:0:0;SampleType:0:40;" mediaHandler="AmioWav" recoveryID="52ccb370-7ef8-442a-a870-84d122cbd894" relativePath="../Imported Files/mixkit-negative-tone-interface-tap-2569.wav"/>
+  </files>
+
+  <audioDevice inputID="AppleHDAEngineInput:1F,3,0,1,0:1" outputID="11111111-1111-1111-1111-11111111">
+    <inputPort id="1" name="Default Stereo Input"/>
+    <inputPort id="2" name="[01M] Built-in Microphone: External Microphone 1"/>
+    <inputPort id="3" name="[02M] Built-in Microphone: External Microphone 2"/>
+    <inputPort id="4" name="[01S] Built-in Microphone: External Microphone 1"/>
+  </audioDevice>
+
+</sesx>

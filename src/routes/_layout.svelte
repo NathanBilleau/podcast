@@ -4,14 +4,12 @@
 	import { afterUpdate } from 'svelte'
 	import { currentTime, start } from '../stores/voice'
 
-	import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
-
 	let prev = '/'
 	let next = '/'
 
-	let routes = ['/', '/introduction', '/histoire', '/chiffres', '/creation', '/diffusion', '/cible', '/modele-economique', '/les-maisons-de-production', '/les-podcasts-independants', '/les-podcasts-produits', '/avis-personnel', '/credits']
+	let routes = ['/', '/introduction', '/histoire', '/chiffres', '/creation', '/diffusion', '/cible', '/modele-economique', '/maisons-de-production', '/les-podcasts-independants', '/les-podcasts-produits', '/avis-personnel', '/credits']
 	let i
-	
+
 
 	// set the currentime to the starting time for the page
 	start.subscribe(s => {
@@ -68,7 +66,7 @@
 		padding: 0 clamp(100px, 9vw, 200px);
 		display: grid;
 		/* grid-template-rows: auto clamp(120px, 12vh, 200px); */
-		grid-template-rows: 100px auto clamp(120px, 12vh, 200px);
+		grid-template-rows: 10px auto clamp(120px, 12vh, 200px);
 		height: 100%;
 	}
 

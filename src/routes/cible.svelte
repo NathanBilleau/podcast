@@ -1,8 +1,9 @@
 <script>
-	import { end } from '../stores/voice'
+	import { end, start } from '../stores/voice'
 	import Chart from '../components/Chart.svelte'
 
-    $end = 40
+	$start = 60 * 2 + 7
+	$end = 60 * 2 + 25 
 
 </script>
 
@@ -17,11 +18,11 @@
 
 <h1>La cible</h1>
 
-<p>
+<p data-timing={60 * 2 + 7.5}>
 	Les auditeurs sont en moyenne âgés de 12 à 54 ans. La cible balaye donc une large part de la population.
 </p>
 
-<Chart data={[
+<Chart time={60 * 2 + 14} data={[
 	{percent: 48, text: '12 - 34 ans'},
 	{percent: 32, text: '35 - 54 ans'},
 	{percent: 20, text: '+ 55 ans'},

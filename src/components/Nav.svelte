@@ -1,7 +1,7 @@
 <script>
 
 	import { onMount } from 'svelte'
-	import { currentTime, voicePlaying, end } from '../stores/voice'
+	import { currentTime, voicePlaying, end, start } from '../stores/voice'
 
 	export let prev, next
 
@@ -38,7 +38,7 @@
 			pause()
 		}
 		else {
-			if ($currentTime < $end) {
+			if ($currentTime <= $end) {
 				play()
 			}
 		}
@@ -118,7 +118,7 @@
 </style>
 
 <!-- svelte-ignore a11y-media-has-caption -->
-<audio src="/voice2.mp3" bind:currentTime={$currentTime}></audio>
+<audio src="/voice.mp3" bind:currentTime={$currentTime}></audio>
 
 <nav>
 	<a href="{prev}" class="{prev ? '' : 'disabled'}" on:mouseover="{boop}">
@@ -126,7 +126,7 @@
 	</a>
 
 	<button class="btn" on:mouseover="{boop}" on:click="{toggleVoice}" disabled="{!$end}" title="Lecture">
-		<i class="fas fa-volume-{$voicePlaying ? 'mute' : 'up'}"></i>
+		<i class="fas fa-{$voicePlaying ? 'pause' : 'play'}"></i>
 	</button>
 
 	<a 	href="{($end === undefined) || ($currentTime >= $end) ? next : undefined}"
