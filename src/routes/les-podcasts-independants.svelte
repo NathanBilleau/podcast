@@ -10,11 +10,9 @@
 
 </script>
 
-<style>
-
-
-</style>
-
+<svelte:head>
+	<title>Les podcasts indépendants</title>
+</svelte:head>
 
 <h1>Les podcasts indépendants</h1>
 <p data-time={60 * 3 + 56.8}>

@@ -12,10 +12,10 @@
 
 </script>
 
-<style>
 
-
-</style>
+<svelte:head>
+	<title>Les maisons de production</title>
+</svelte:head>
 
 
 <h1>Les maisons de production</h1>

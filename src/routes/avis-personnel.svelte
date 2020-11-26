@@ -14,6 +14,9 @@
 
 </script>
 
+<svelte:head>
+	<title>Avis personnel sur le média</title>
+</svelte:head>
 
 <h1>Avis personnel sur le média</h1>
 

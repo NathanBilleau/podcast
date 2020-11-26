@@ -10,11 +10,9 @@
 
 </script>
 
-<style>
-
-
-</style>
-
+<svelte:head>
+	<title>Les podcasts produits</title>
+</svelte:head>
 
 <h1>Les podcasts produits</h1>
 

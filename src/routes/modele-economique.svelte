@@ -6,11 +6,10 @@
 
 </script>
 
-<style>
 
-
-</style>
-
+<svelte:head>
+	<title>Le modèle économique</title>
+</svelte:head>
 
 <h1>Le modèle économique</h1>
 
