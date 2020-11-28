@@ -129,9 +129,9 @@
 		<i class="fas fa-{$voicePlaying ? 'pause' : 'play'}"></i>
 	</button>
 
-	<a 	href="{($end === undefined) || ($currentTime >= $end) ? next : undefined}"
-		class="{($end === undefined) || next && ($currentTime >= $end) ? '' : 'disabled'}"
-		on:mouseover="{($end === undefined) || next && ($currentTime >= $end) ? boop : null}">
+	<a 	href="{(next == '/credits') || (($end === undefined) || ($currentTime >= $end)) ? next : undefined}"
+		class="{(next == '/credits') || (($end === undefined) || next && ($currentTime >= $end)) ? '' : 'disabled'}"
+		on:mouseover="{(next == '/credits') || (($end === undefined) || next && ($currentTime >= $end)) ? boop : null}">
 		Suivant
 	</a>
 </nav>

@@ -33,6 +33,6 @@
 </div>
 
 <p data-time={60 * 5 + 29}>
-    Comme montré précédemment, ce média permet une grande diversité de format et de thèmes. 
+    Comme montré précédemment, ce média permet une grande diversité de formats et de thèmes. 
 </p>
 
