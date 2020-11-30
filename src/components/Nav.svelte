@@ -109,6 +109,7 @@
 		right: 0;
 		left: 0;
 		transition: .2s cubic-bezier(.83,0,.31,.94);
+		outline: none;
 	}
 
 	audio {
