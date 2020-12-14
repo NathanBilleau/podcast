@@ -27,7 +27,7 @@
         Contenu et developpement
     </div>
     <div class="text">
-        <a href="https://nathanbilleau.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://nathanbilleau.fr" target="_blank" rel="noopener noreferrer">
             Nathan Billeau
         </a>
     </div>
